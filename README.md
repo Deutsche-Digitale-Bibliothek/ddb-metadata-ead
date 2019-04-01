@@ -23,4 +23,4 @@ Im Unterordner `ead_ddb/1.2/schema` finden Sie XML-Schema-Dateien zur Validierun
 
 Eine ausführliche Dokumentation folgt in Kürze und wird dann hier verlinkt.
 
-Weitere Informationen zu EAD(DDB) auf den Seiten des [Landesarchivs Badenwürttemberg](https://www.landesarchiv-bw.de/ead ).
+Weitere Informationen zu EAD(DDB) auf den Seiten des [Landesarchivs Baden-Württemberg](https://www.landesarchiv-bw.de/ead ).
