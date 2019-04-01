@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mets:mets xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mets="http://www.loc.gov/METS/"
+  xmlns:mods="http://www.loc.gov/mods/v3" xmlns:dv="http://dfg-viewer.de/"
+  xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <mets:dmdSec ID="DMDLOG_1">
+    <mets:mdWrap MDTYPE="MODS">
+      <mets:xmlData>
+        <mods:mods>
+          <mods:recordInfo>
+            <mods:recordIdentifier>labw-1-1263080</mods:recordIdentifier>
+            <mods:descriptionStandard>DFG-Viewer/Archiv v2.3</mods:descriptionStandard>
+          </mods:recordInfo>
+          <mods:location>
+            <mods:physicalLocation>Landesarchiv Baden-Württemberg, Abt. Hauptstaatsarchiv Stuttgart</mods:physicalLocation>
+            <mods:shelfLocator>H 51 U 589</mods:shelfLocator>
+            <mods:url access="object in context"
+              >http://www.landesarchiv-bw.de/plink/?f=1-1263080</mods:url>
+          </mods:location>
+          <mods:titleInfo>
+            <mods:title>Kaiser Karl publiziert die ersten dreiundzwanzig Kapitel der Goldenen Bulle</mods:title>
+            <mods:subTitle>Untertitel des Archivale</mods:subTitle>
+          </mods:titleInfo>
+          <mods:originInfo eventType="production">
+            <mods:dateCreated point="end" encoding="iso8601">1356-01-10</mods:dateCreated>
+          </mods:originInfo>
+          <mods:relatedItem type="host" displayLabel="Gliederung">
+            <mods:titleInfo>
+              <mods:title>Urkunden</mods:title>
+              <mods:subTitle>Untertitel / abstract</mods:subTitle>
+            </mods:titleInfo>
+            <mods:relatedItem type="host" displayLabel="Bestand">
+              <mods:titleInfo>
+                <mods:title>Kaiserselekt</mods:title>
+              </mods:titleInfo>
+            </mods:relatedItem>
+          </mods:relatedItem>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:amdSec ID="amd1">
+    <mets:rightsMD ID="rights1">
+      <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS">
+        <mets:xmlData>
+          <dv:rights>
+            <dv:owner>Landesarchiv Baden-Württemberg, Abt. Hauptstaatsarchiv Stuttgart</dv:owner>
+            <dv:ownerSiteURL>http://www.landesarchiv-bw.de/hstas</dv:ownerSiteURL>
+            <dv:ownerContact>mailto:landesarchiv@la-bw.de</dv:ownerContact>
+            <dv:ownerLogo>https://www.landesarchiv-bw.de/dfgviewer/logo.jpg</dv:ownerLogo>
+            <dv:aggregator>Name des Aggregators</dv:aggregator>
+            <dv:aggregatorLogo>https://www.landesarchiv-bw.de/dfgviewer/logo.jpg</dv:aggregatorLogo>
+            <dv:aggregatorSiteURL>http://www.landesarchiv-bw.de/</dv:aggregatorSiteURL>
+            <dv:sponsor>Name des Sponsors</dv:sponsor>
+            <dv:sponsorLogo>https://www.landesarchiv-bw.de/dfgviewer/logo.jpg</dv:sponsorLogo>
+            <dv:sponsorSiteURL>http://www.landesarchiv-bw.de/</dv:sponsorSiteURL>
+            <dv:license>cc-by-sa</dv:license>
+          </dv:rights>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:rightsMD>
+    <mets:digiprovMD ID="digiprov1">
+      <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVLINKS">
+        <mets:xmlData>
+          <dv:links>
+            <dv:reference>http://www.landesarchiv-bw.de/plink/?f=1-1263080</dv:reference>
+            <dv:presentation>http://www.landesarchiv-bw.de/plink/?f=1-1263080-1</dv:presentation>
+          </dv:links>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+  </mets:amdSec>
+  <mets:fileSec>
+    <mets:fileGrp USE="DEFAULT">
+      <mets:file ID="file-default-image_1-1263080-1" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-1&amp;ext=456788&amp;format=jpg"
+        />
+      </mets:file>
+      <mets:file ID="file-full-image_1-1263080-2" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-2&amp;ext=456788&amp;format=jpg"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="MAX">
+      <mets:file ID="file-max-image_1-1263080-1" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-1&amp;ext=456788&amp;format=jpg_max"
+        />
+      </mets:file>
+      <mets:file ID="file-max-image_1-1263080-2" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-2&amp;ext=456788&amp;format=jpg_max"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="DOWNLOAD">
+      <mets:file ID="file-download-image_1-1263080-1" MIMETYPE="application/pdf">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-1&amp;ext=456788&amp;format=pdf"
+        />
+      </mets:file>
+      <mets:file ID="file-download-image_1-1263080-2" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-2&amp;ext=456788&amp;format=pdf"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="THUMBS">
+      <mets:file ID="file-thumbs-image_1-1263080-1" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-1&amp;ext=456788&amp;format=jpg_thumb"
+        />
+      </mets:file>
+      <mets:file ID="file-thumbs-image_1-1263080-2" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL"
+          xlink:href="http://www.landesarchiv-bw.de/plink/?f=1-1263080-2&amp;ext=456788&amp;format=jpg_thumb"
+        />
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap TYPE="PHYSICAL">
+    <mets:div ID="phys1" TYPE="physSequence">
+      <mets:div ID="image_1-1263080-1" ORDER="1" ORDERLABEL="2" TYPE="page">
+        <mets:fptr FILEID="file-default-image_1-1263080-1"/>
+        <mets:fptr FILEID="file-max-image_1-1263080-1"/>
+        <mets:fptr FILEID="file-download-image_1-1263080-1"/>
+        <mets:fptr FILEID="file-thumbs-image_1-1263080-1"/>
+      </mets:div>
+      <mets:div ID="image_1-1263080-2" ORDER="2" ORDERLABEL="3" TYPE="page">
+        <mets:fptr FILEID="file-default-image_1-1263080-2"/>
+        <mets:fptr FILEID="file-max-image_1-1263080-2"/>
+        <mets:fptr FILEID="file-download-image_1-1263080-2"/>
+        <mets:fptr FILEID="file-thumbs-image_1-1263080-2"/>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+  <mets:structMap TYPE="LOGICAL">
+    <mets:div ID="log1" TYPE="act" DMDID="DMDLOG_1" ADMID="amd1"
+      LABEL="Die ersten 23 Kapitel der Goldenen Bulle" ORDER="1">
+      <mets:div ID="x1" TYPE="section" LABEL="Schmuckkassette" ORDER="2"/>
+      <mets:div ID="x2" TYPE="section" LABEL="Einband Vorderseite" ORDER="3"/>
+    </mets:div>
+  </mets:structMap>
+  <mets:structLink>
+    <mets:smLink xlink:from="x1" xlink:to="image_1-1263080-1"/>
+    <mets:smLink xlink:from="x2" xlink:to="image_1-1263080-2"/>
+  </mets:structLink>
+</mets:mets>

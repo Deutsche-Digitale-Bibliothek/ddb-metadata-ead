@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Tektonik EAD(DDB) 1.2 (Tektonik-Optimalbeispiel)
+	Autor: Oliver Götze, Matthias Forster, Martin Reisacher
+	Version: Tektonik EAD(DDB) 1.2
+	Datum: 20190218
+-->
+<ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/xlink/xlink.xsd"
+	audience="external">
+	<eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+		repositoryencoding="iso15511" scriptencoding="iso15924">
+		<eadid mainagencycode="DE-ISIL" url="Link_zur_Übergeordneten_Instition/Archiv"
+			>Identifier_der_Archivtektonik</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>"Archivname" (Archivtektonik)</titleproper>
+			</titlestmt>
+		</filedesc>
+		<profiledesc>
+			<creation>
+				<date normal="2019-01-29">Erstellungsdatum der Tektonik</date>
+			</creation>
+		</profiledesc>
+	</eadheader>
+	<archdesc level="collection" type="Tektonik">
+		<did>
+			<repository label="Baden-Württemberg">
+				<corpname role="Übergeordnete Institution">Gesamtbehörde</corpname>
+			</repository>
+		</did>
+		<dsc>
+			<c level="collection" id="Identifier_der_Archivtektonik">
+				<did>
+					<repository>
+						<corpname role="Staatliche Archive" id="Identifier_des_Archivs">Name des
+							Archivs</corpname>
+						<address>
+							<addressline>Adresse des Archivs + Email</addressline>
+						</address>
+						<extref xlink:role="url_archive" xlink:href="Link_zur_Website_des_Archivs"
+							>Name des Archivs</extref>
+					</repository>
+					<unittitle>Archivname (Archivtektonik)</unittitle>
+				</did>
+				<userestrict>
+					<!-- neu in EAD(DDB) 1.2: Rechtehinweis kann in den Daten hinterlegt werden (fakultativ) -->
+					<p>Rechtehinweis</p>
+				</userestrict>
+				<userestrict type="ead">
+					<!-- neu in EAD(DDB) 1.2: Lizenzauszeichnung (Metadaten) kann in den Metadaten hinterlegt werden (fakultativ) -->
+					<head>Creative Commons</head>
+					<p><extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">CC0
+							1.0 Universal (CC0 1.0) Public Domain Dedication</extref>
+						<!-- wenn kein URI vorhanden, textlichen Hinweis direkt in <p> hinterlegen -->
+					</p>
+				</userestrict>
+				<userestrict type="dao">
+					<!-- neu in EAD(DDB) 1.2: Lizenzauszeichnung (Digitalisate) kann in den Metadaten hinterlegt werden (fakultativ) -->
+					<head>Creative Commons</head>
+					<p><extref xlink:href="http://creativecommons.org/licenses/by/3.0/de/">CC-BY
+							3.0</extref>
+						<!-- wenn kein URI vorhanden, textlichen Hinweis direkt in <p> hinterlegen -->
+					</p>
+				</userestrict>
+				<otherfindaid>
+					<extref xlink:role="url_tektonik"
+						xlink:href="Link zur Online-Beständeübersicht im Herkunftssystem"> Tektonik
+						im Angebot des Archivs </extref>
+				</otherfindaid>
+				<c level="class" id="Identifier_der_Klassifikation">
+					<!-- neu in EAD(DDB) 1.2: Angleichung der Feldinhalte auf Ebene Klassifikation/Serie an Archivale/Vorgang -->
+					<!-- Pflichtelement ist weiterhin nur did/unittitle -->
+					<did>
+						<unitid>Signatur, Systemstelle in der Klassifikation o.ä.</unitid>
+						<unittitle>Gliederungsüberschrift</unittitle>
+						<abstract>Erläuterungen zu einer Gliederungsstufe</abstract>
+					</did>
+					<otherfindaid>
+						<extref xlink:role="url_archivalunit"
+							xlink:href="Permalink_zur_Anzeige_im_Herkunftssystem"
+							>Titelaufnahme im Angebot des Archivs</extref>
+					</otherfindaid>
+					<accessrestrict>
+						<head>Zugangsbeschränkung Überschrift</head>
+						<p>Zugangsbeschränkung Text</p>
+					</accessrestrict>
+					<userestrict>
+						<!-- neu in EAD(DDB) 1.2: Rechtehinweis kann in den Daten hinterlegt werden (fakultativ) -->
+						<p>Rechtehinweis</p>
+					</userestrict>
+					<userestrict type="ead">
+						<!-- neu in EAD(DDB) 1.2: Lizenzauszeichnung (Metadaten) kann in den Metadaten hinterlegt werden (fakultativ) -->
+						<head>Creative Commons</head>
+						<p><extref
+							xlink:href="http://creativecommons.org/publicdomain/zero/1.0/"
+							>CC0 1.0 Universal (CC0 1.0) Public Domain
+							Dedication</extref></p>
+					</userestrict>
+					<userestrict type="dao">
+						<!-- neu in EAD(DDB) 1.2: Lizenzauszeichnung (Digitalisate) kann in den Metadaten hinterlegt werden (fakultativ) -->
+						<head>Creative Commons</head>
+						<p><extref
+							xlink:href="http://creativecommons.org/licenses/by/3.0/de/"
+							>CC-BY 3.0</extref></p>
+					</userestrict>
+					<c level="series" id="Identifier_der_Bestandsserie">
+						<!-- neu in EAD(DDB) 1.2: Angleichung der Feldinhalte auf Ebene Klassifikation/Serie an Archivale/Vorgang -->
+						<!-- Pflichtelement ist weiterhin nur did/unittitle -->
+						<did>
+							<unittitle>Serientitel</unittitle>
+							<!-- hier sind alle Elemente der class-Ebene wiederverwendbar -->
+						</did>
+						<c level="file" id="Identifier_des_Findbuchs">
+							<!--
+								neu in EAD(DDB) 1.2: analog zum Bestandsdatensatz (c[@level='collection']) im Findbuch sind dieselben Verzeichnungselemente nun auch in der Tektonik zugelassen (abgesehen von der Verknüpfung digitaler Objekte (<daogrp>).
+								Pflichtelenent ist an dieser Stelle weiterhin lediglich der Bestandstitel (did/unittitle). 
+								Im Findbuch vorhandene Bestandsinformationen, die an dieser Stelle fehlen, werden bei der DDB automatisch angereichert.
+							-->
+							<did>
+								<unitid>Bestandssignatur</unitid>
+								<unittitle>Bestandstitel</unittitle>
+								<abstract>Kurze Bestandsbeschreibung</abstract>
+								<unitdate normal="1900-01-01/1905-01-01">Bestandslaufzeit</unitdate>
+								<physdesc>
+									<genreform normal="Karten und Pläne">Archivalientyp</genreform>
+									<dimensions>Maße</dimensions>
+									<extent>Umfang</extent>
+								</physdesc>
+								<langmaterial>
+									<language langcode="ger" scriptcode="Latn">Sprache der
+										Unterlagen</language>
+								</langmaterial>
+								<origination>Provenienz</origination>
+								<origination label="pre">Vorprovenienz</origination>
+								<origination label="Fotograph">
+									<name source="Normvokabularname"
+										authfilenumber="Normvokabular_Nummer">Urheber</name>
+								</origination>
+							</did>
+							<scopecontent encodinganalog="Einleitung">
+								<head>Bestandseinleitung_Überschrift</head>
+								<p>Bestandseinleitung_Text</p>
+							</scopecontent>
+							<relatedmaterial>
+								<head>Verweis auf verwandte Bestände/Literatur Überschrift</head>
+								<p>Verweis auf verwandte Bestände/Literatur Überschrift Text</p>
+							</relatedmaterial>
+							<accessrestrict>
+								<head>Zugangsbeschränkung Überschrift</head>
+								<p>Zugangsbeschränkung</p>
+							</accessrestrict>
+							<index>
+								<indexentry>
+									<geogname role="Rolle (z.B.: Ausstellungsort)"
+										source="Normvokabularname"
+										authfilenumber="Normvokabular_Nummer">Indexbegriff
+										Ort</geogname>
+								</indexentry>
+								<!-- neu in EAD(DDB) 1.2: Rolle (@role) für Indextyp Sache eingeführt, um benutzerdefinierte Indextypen abbilden zu können -->
+								<indexentry>
+									<subject role="Spezifizierung des Begriffstyps (zur Abbildung benutzerdefinierter Indextypen)" source="Normvokabularname"
+										authfilenumber="Normvokabular_Nummer">Indexbegriff
+										Sache</subject>
+								</indexentry>
+								<indexentry>
+									<persname role="Rolle (z.B.: Schreiber)"
+										source="Normvokabularname"
+										authfilenumber="Normvokabular_Nummer">Indexbegriff
+										Person</persname>
+								</indexentry>
+								<!-- neu in EAD(DDB) 1.2: Indexbegriff-Typ für Körperschaften -->
+								<indexentry>
+									<corpname role="Rolle"
+										source="Normvokabularname"
+										authfilenumber="Normvokabular_Nummer">Indexbegriff
+										Körperschaft</corpname>
+								</indexentry>
+							</index>
+							<odd>
+								<head>Sonstiges Erschließungsangaben Überschrift</head>
+								<p>Sonstiges Erschließungsangaben Text</p>
+							</odd>
+							<odd>
+								<head>Sonstiges Erschließungsangaben in Datumform Überschrift (z.B.:
+									Geburtsdatum)</head>
+								<p><date normal="1901-01-01">Datum</date></p>
+							</odd>
+							<otherfindaid>
+								<extref xlink:role="url_bestand"
+									xlink:href="Link zur Anzeige der Bestandsinformation im Herkunftssystem"
+									> Beständeübersicht des Archivs </extref>
+							</otherfindaid>
+						</c>
+					</c>
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Findbuch EAD(DDB) 1.2 (Findbuch-Minimalbeispiel)
+	Autor: Oliver Götze, Matthias Forster, Martin Reisacher
+	Version: Findbuch EAD(DDB) 1.2
+	Datum: 20190129
+-->
+<ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/xlink/xlink.xsd"
+	audience="external">
+	<eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+		repositoryencoding="iso15511" scriptencoding="iso15924">
+		<eadid mainagencycode="DE-ISIL" url="Link_zur_Übergeordneten_Instition/Archiv">Identifier_des_Findbuchs</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>Bestandstitel</titleproper>
+			</titlestmt>
+		</filedesc>
+		<profiledesc>
+			<creation>
+				<date normal="2019-01-29">Erstellungsdatum des Findbuchs</date>
+			</creation>
+		</profiledesc>
+	</eadheader>
+	<archdesc level="collection" type="Findbuch">
+		<did>
+			<repository>
+				<corpname role="Staatliche Archive" id="DE-ISIL">Name des Archivs</corpname>
+				<!-- neu in EAD(DDB) 1.2: ISIL in @id - wird durch die DDB automatisch befüllt -->
+			</repository>
+		</did>
+		<dsc>
+			<c level="collection" id="Identifier_des_Findbuchs">
+				<did>
+					<unittitle>Bestandstitel</unittitle>
+				</did>
+				<c level="file" id="Identifier_der_Titelaufnahme">
+					<did>
+						<unitid>Archivaliensignatur</unitid>
+						<unittitle>Titel der Archivalie</unittitle>
+					</did>				
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>
