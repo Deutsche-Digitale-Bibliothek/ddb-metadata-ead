@@ -19,6 +19,10 @@ Im Unterordner `ead_ddb/1.2/schema` finden Sie XML-Schema-Dateien zur Validierun
 
 Über Verbesserungsvorschläge bzw. Fehlerberichte freuen wir uns. Diese können Sie unter [Issues](https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead/issues) anlegen.
 
+## Changelog
+- 2019-07-15: EAD(DDB) 1.2 (Bugfix): Abprüfung der korrekten Findbuch-Struktur (Bestandsdatensatz als oberster c-Knoten). Dateien mit falscher Struktur wurden nicht weiter validiert und fälschlicherweise als valide deklariert.
+- 2019-04-01: Erste Veröffentlichung der Schemata und Beispieldateien zu EAD(DDB) 1.2.
+
 ## Weiterführende Informationen
 
 Eine ausführliche Dokumentation folgt in Kürze und wird dann hier verlinkt.
