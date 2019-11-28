@@ -3,7 +3,7 @@
 	Findbuch EAD(DDB) 1.2 (XSD 1.1)
 	Autor: Martin Reisacher, Matthias Forster, Oliver Götze
 	Version: Findbuch EAD(DDB) 1.2
-	Datum: 20190715
+	Datum: 20191128
 	based on: http://www.loc.gov/ead/ead.xsd
 -->
 <xs:schema xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1150,7 +1150,7 @@
             <xs:element name="origination" type="origination" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="physdesc" type="physdesc" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="unitdate" type="unitdate" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:element name="unitid" type="unitid" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="unitid" type="unitid" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="unittitle" type="unittitle" minOccurs="1" maxOccurs="1"/>
         </xs:all>
     </xs:group>
@@ -1186,7 +1186,9 @@
                     <xs:alternative test="@type = 'dao'" type="userestrict_dao"/>
                 </xs:element>
             </xs:choice>
-            <xs:element name="otherfindaid" type="otherfindaid"/>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:element name="otherfindaid" type="otherfindaid"/>
+            </xs:choice>
         </xs:sequence>
     </xs:group>
     <xs:group name="m.desc.full.collection">

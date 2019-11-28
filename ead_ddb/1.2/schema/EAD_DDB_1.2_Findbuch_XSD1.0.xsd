@@ -3,7 +3,7 @@
 	Findbuch EAD(DDB) 1.2 (XSD 1.0)
 	Autor: Martin Reisacher, Matthias Forster, Oliver Götze
 	Version: Findbuch EAD(DDB) 1.2
-	Datum: 20190204
+	Datum: 20191128
 	based on: http://www.loc.gov/ead/ead.xsd
 -->
 <xs:schema xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1040,7 +1040,9 @@
             <xs:choice minOccurs="0" maxOccurs="3">
                 <xs:element name="userestrict" type="userestrict"/>
             </xs:choice>
-            <xs:element name="otherfindaid" type="otherfindaid"/>
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:element name="otherfindaid" type="otherfindaid"/>
+            </xs:choice>
         </xs:sequence>
     </xs:group>
     
