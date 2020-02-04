@@ -20,12 +20,11 @@ Im Unterordner `ead_ddb/1.2/schema` finden Sie XML-Schema-Dateien zur Validierun
 Über Verbesserungsvorschläge bzw. Fehlerberichte freuen wir uns. Diese können Sie unter [Issues](https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead/issues) anlegen.
 
 ## Changelog
+- 2020-02-04: Beispieldateien und Schemata für EAD(DDB) 1.1 zur Dokumentation hinterlegt. [Neue Dokumentation](https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=19010180) verlinkt.
 - 2019-11-28: EAD(DDB) 1.2 Findbuch-XSD (Bugfix): `//c[@level="file"]/did/unitid` und `/ead/archdesc/otherfindaid` nicht als Pflichtelement behandeln.
 - 2019-07-15: EAD(DDB) 1.2 (Bugfix): Abprüfung der korrekten Findbuch-Struktur (Bestandsdatensatz als oberster `c`-Knoten). Dateien mit falscher Struktur wurden nicht weiter validiert und fälschlicherweise als valide deklariert.
 - 2019-04-01: Erste Veröffentlichung der Schemata und Beispieldateien zu EAD(DDB) 1.2.
 
 ## Weiterführende Informationen
 
-Eine ausführliche Dokumentation folgt in Kürze und wird dann hier verlinkt.
-
-Weitere Informationen zu EAD(DDB) auf den Seiten des [Landesarchivs Baden-Württemberg](https://www.landesarchiv-bw.de/ead ).
+Weitere Informationen zu EAD(DDB) sowie eine ausführliche Dokumentation finden Sie [hier](https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=19010180).

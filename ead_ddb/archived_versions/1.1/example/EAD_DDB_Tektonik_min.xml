@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/xlink/xlink.xsd">
+	<eadheader>
+		<eadid>Identifier der Archivtektonik</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>"Archivname" (Archivtektonik)</titleproper>
+			</titlestmt>
+		</filedesc>
+		<profiledesc>
+			<creation>
+				<date normal="2013-08-31">Erstellungsdatum der Tektonik</date>
+			</creation>
+		</profiledesc>
+	</eadheader>
+	<archdesc level="collection" type="Tektonik">
+		<did>
+			<repository label="Baden-Württemberg"/>
+		</did>
+		<dsc>
+			<c level="collection" id="Identifier_der_Archivtektonik">
+				<did>
+					<unittitle>"Archivname" (Archivtektonik)</unittitle>
+					<repository>
+						<corpname role="Staatliche Archive">Name des Archivs</corpname>
+					</repository>
+				</did>
+				<c level="file" id="Identifier_des_Bestands">
+					<did>
+						<unittitle>Bestandstitel</unittitle>
+					</did>
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>

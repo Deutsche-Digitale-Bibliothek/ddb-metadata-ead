@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Tektonik EAD (DDB)
+	Autor: Martin Reisacher
+	version: Draft for 1.0
+	date: 20130801
+	based on: http://www.loc.gov/ead/ead.xsd	
+-->
+<xs:schema xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:isbn:1-931666-22-9"
+	elementFormDefault="qualified">
+	<xs:import namespace="http://www.w3.org/1999/xlink"
+		schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
+	<!--Attribut-Definitionen-->
+	<xs:attributeGroup name="am.date.normal">
+		<xs:attribute name="normal">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:pattern
+						value="(\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)(/\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)?"
+					/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="am.date.normal_oblig">
+		<xs:attribute name="normal" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:pattern
+						value="(\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)(/\-?(0|1|2)([0-9]{3})(((01|02|03|04|05|06|07|08|09|10|11|12)((0[1-9])|((1|2)[0-9])|(3[0-1])))|\-((01|02|03|04|05|06|07|08|09|10|11|12)(\-((0[1-9])|((1|2)[0-9])|(3[0-1])))?))?)?"
+					/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:simpleType name="data.repositorycode">
+		<xs:restriction base="xs:token">
+			<xs:pattern
+				value="((AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IL|IT|JM|JP|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|MS|MA|MZ|MM|NA|NR|NP|NL|AN|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|SH|KN|LC|PM|VC|WS|SM|ST|SA|SN|CS|SC|SL|SG|SK|SI|SB|SO|ZA|GS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)|([a-zA-Z]{1})|([a-zA-Z]{3,4}))(-[a-zA-Z0-9:/\-]{1,11})"
+			/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attributeGroup name="am.mainagencycode">
+		<xs:attribute name="mainagencycode" type="data.repositorycode"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="am.repositorycode">
+		<xs:attribute name="repositorycode" type="data.repositorycode"/>
+	</xs:attributeGroup>
+	
+	<xs:attributeGroup name="am.countrycode">
+		<xs:attribute name="countrycode">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="AF"/>
+					<xs:enumeration value="AX"/>
+					<xs:enumeration value="AL"/>
+					<xs:enumeration value="DZ"/>
+					<xs:enumeration value="AS"/>
+					<xs:enumeration value="AD"/>
+					<xs:enumeration value="AO"/>
+					<xs:enumeration value="AI"/>
+					<xs:enumeration value="AQ"/>
+					<xs:enumeration value="AG"/>
+					<xs:enumeration value="AR"/>
+					<xs:enumeration value="AM"/>
+					<xs:enumeration value="AW"/>
+					<xs:enumeration value="AU"/>
+					<xs:enumeration value="AT"/>
+					<xs:enumeration value="AZ"/>
+					<xs:enumeration value="BS"/>
+					<xs:enumeration value="BH"/>
+					<xs:enumeration value="BD"/>
+					<xs:enumeration value="BB"/>
+					<xs:enumeration value="BY"/>
+					<xs:enumeration value="BE"/>
+					<xs:enumeration value="BZ"/>
+					<xs:enumeration value="BJ"/>
+					<xs:enumeration value="BM"/>
+					<xs:enumeration value="BT"/>
+					<xs:enumeration value="BO"/>
+					<xs:enumeration value="BA"/>
+					<xs:enumeration value="BW"/>
+					<xs:enumeration value="BV"/>
+					<xs:enumeration value="BR"/>
+					<xs:enumeration value="IO"/>
+					<xs:enumeration value="BN"/>
+					<xs:enumeration value="BG"/>
+					<xs:enumeration value="BF"/>
+					<xs:enumeration value="BI"/>
+					<xs:enumeration value="KH"/>
+					<xs:enumeration value="CM"/>
+					<xs:enumeration value="CA"/>
+					<xs:enumeration value="CV"/>
+					<xs:enumeration value="KY"/>
+					<xs:enumeration value="CF"/>
+					<xs:enumeration value="TD"/>
+					<xs:enumeration value="CL"/>
+					<xs:enumeration value="CN"/>
+					<xs:enumeration value="CX"/>
+					<xs:enumeration value="CC"/>
+					<xs:enumeration value="CO"/>
+					<xs:enumeration value="KM"/>
+					<xs:enumeration value="CG"/>
+					<xs:enumeration value="CD"/>
+					<xs:enumeration value="CK"/>
+					<xs:enumeration value="CR"/>
+					<xs:enumeration value="CI"/>
+					<xs:enumeration value="HR"/>
+					<xs:enumeration value="CU"/>
+					<xs:enumeration value="CY"/>
+					<xs:enumeration value="CZ"/>
+					<xs:enumeration value="DK"/>
+					<xs:enumeration value="DJ"/>
+					<xs:enumeration value="DM"/>
+					<xs:enumeration value="DO"/>
+					<xs:enumeration value="EC"/>
+					<xs:enumeration value="EG"/>
+					<xs:enumeration value="SV"/>
+					<xs:enumeration value="GQ"/>
+					<xs:enumeration value="ER"/>
+					<xs:enumeration value="EE"/>
+					<xs:enumeration value="ET"/>
+					<xs:enumeration value="FK"/>
+					<xs:enumeration value="FO"/>
+					<xs:enumeration value="FJ"/>
+					<xs:enumeration value="FI"/>
+					<xs:enumeration value="FR"/>
+					<xs:enumeration value="GF"/>
+					<xs:enumeration value="PF"/>
+					<xs:enumeration value="TF"/>
+					<xs:enumeration value="GA"/>
+					<xs:enumeration value="GM"/>
+					<xs:enumeration value="GE"/>
+					<xs:enumeration value="DE"/>
+					<xs:enumeration value="GH"/>
+					<xs:enumeration value="GI"/>
+					<xs:enumeration value="GR"/>
+					<xs:enumeration value="GL"/>
+					<xs:enumeration value="GD"/>
+					<xs:enumeration value="GP"/>
+					<xs:enumeration value="GU"/>
+					<xs:enumeration value="GT"/>
+					<xs:enumeration value="GN"/>
+					<xs:enumeration value="GW"/>
+					<xs:enumeration value="GY"/>
+					<xs:enumeration value="HT"/>
+					<xs:enumeration value="HM"/>
+					<xs:enumeration value="VA"/>
+					<xs:enumeration value="HN"/>
+					<xs:enumeration value="HK"/>
+					<xs:enumeration value="HU"/>
+					<xs:enumeration value="IS"/>
+					<xs:enumeration value="IN"/>
+					<xs:enumeration value="ID"/>
+					<xs:enumeration value="IR"/>
+					<xs:enumeration value="IQ"/>
+					<xs:enumeration value="IE"/>
+					<xs:enumeration value="IL"/>
+					<xs:enumeration value="IT"/>
+					<xs:enumeration value="JM"/>
+					<xs:enumeration value="JP"/>
+					<xs:enumeration value="JO"/>
+					<xs:enumeration value="KZ"/>
+					<xs:enumeration value="KE"/>
+					<xs:enumeration value="KI"/>
+					<xs:enumeration value="KP"/>
+					<xs:enumeration value="KR"/>
+					<xs:enumeration value="KW"/>
+					<xs:enumeration value="KG"/>
+					<xs:enumeration value="LA"/>
+					<xs:enumeration value="LV"/>
+					<xs:enumeration value="LB"/>
+					<xs:enumeration value="LS"/>
+					<xs:enumeration value="LR"/>
+					<xs:enumeration value="LY"/>
+					<xs:enumeration value="LI"/>
+					<xs:enumeration value="LT"/>
+					<xs:enumeration value="LU"/>
+					<xs:enumeration value="MO"/>
+					<xs:enumeration value="MK"/>
+					<xs:enumeration value="MG"/>
+					<xs:enumeration value="MW"/>
+					<xs:enumeration value="MY"/>
+					<xs:enumeration value="MV"/>
+					<xs:enumeration value="ML"/>
+					<xs:enumeration value="MT"/>
+					<xs:enumeration value="MH"/>
+					<xs:enumeration value="MQ"/>
+					<xs:enumeration value="MR"/>
+					<xs:enumeration value="MU"/>
+					<xs:enumeration value="YT"/>
+					<xs:enumeration value="MX"/>
+					<xs:enumeration value="FM"/>
+					<xs:enumeration value="MD"/>
+					<xs:enumeration value="MC"/>
+					<xs:enumeration value="MN"/>
+					<xs:enumeration value="MS"/>
+					<xs:enumeration value="MA"/>
+					<xs:enumeration value="MZ"/>
+					<xs:enumeration value="MM"/>
+					<xs:enumeration value="NA"/>
+					<xs:enumeration value="NR"/>
+					<xs:enumeration value="NP"/>
+					<xs:enumeration value="NL"/>
+					<xs:enumeration value="AN"/>
+					<xs:enumeration value="NC"/>
+					<xs:enumeration value="NZ"/>
+					<xs:enumeration value="NI"/>
+					<xs:enumeration value="NE"/>
+					<xs:enumeration value="NG"/>
+					<xs:enumeration value="NU"/>
+					<xs:enumeration value="NF"/>
+					<xs:enumeration value="MP"/>
+					<xs:enumeration value="NO"/>
+					<xs:enumeration value="OM"/>
+					<xs:enumeration value="PK"/>
+					<xs:enumeration value="PW"/>
+					<xs:enumeration value="PS"/>
+					<xs:enumeration value="PA"/>
+					<xs:enumeration value="PG"/>
+					<xs:enumeration value="PY"/>
+					<xs:enumeration value="PE"/>
+					<xs:enumeration value="PH"/>
+					<xs:enumeration value="PN"/>
+					<xs:enumeration value="PL"/>
+					<xs:enumeration value="PT"/>
+					<xs:enumeration value="PR"/>
+					<xs:enumeration value="QA"/>
+					<xs:enumeration value="RE"/>
+					<xs:enumeration value="RO"/>
+					<xs:enumeration value="RU"/>
+					<xs:enumeration value="RW"/>
+					<xs:enumeration value="SH"/>
+					<xs:enumeration value="KN"/>
+					<xs:enumeration value="LC"/>
+					<xs:enumeration value="PM"/>
+					<xs:enumeration value="VC"/>
+					<xs:enumeration value="WS"/>
+					<xs:enumeration value="SM"/>
+					<xs:enumeration value="ST"/>
+					<xs:enumeration value="SA"/>
+					<xs:enumeration value="SN"/>
+					<xs:enumeration value="CS"/>
+					<xs:enumeration value="SC"/>
+					<xs:enumeration value="SL"/>
+					<xs:enumeration value="SG"/>
+					<xs:enumeration value="SK"/>
+					<xs:enumeration value="SI"/>
+					<xs:enumeration value="SB"/>
+					<xs:enumeration value="SO"/>
+					<xs:enumeration value="ZA"/>
+					<xs:enumeration value="GS"/>
+					<xs:enumeration value="ES"/>
+					<xs:enumeration value="LK"/>
+					<xs:enumeration value="SD"/>
+					<xs:enumeration value="SR"/>
+					<xs:enumeration value="SJ"/>
+					<xs:enumeration value="SZ"/>
+					<xs:enumeration value="SE"/>
+					<xs:enumeration value="CH"/>
+					<xs:enumeration value="SY"/>
+					<xs:enumeration value="TW"/>
+					<xs:enumeration value="TJ"/>
+					<xs:enumeration value="TZ"/>
+					<xs:enumeration value="TH"/>
+					<xs:enumeration value="TL"/>
+					<xs:enumeration value="TG"/>
+					<xs:enumeration value="TK"/>
+					<xs:enumeration value="TO"/>
+					<xs:enumeration value="TT"/>
+					<xs:enumeration value="TN"/>
+					<xs:enumeration value="TR"/>
+					<xs:enumeration value="TM"/>
+					<xs:enumeration value="TC"/>
+					<xs:enumeration value="TV"/>
+					<xs:enumeration value="UG"/>
+					<xs:enumeration value="UA"/>
+					<xs:enumeration value="AE"/>
+					<xs:enumeration value="GB"/>
+					<xs:enumeration value="US"/>
+					<xs:enumeration value="UM"/>
+					<xs:enumeration value="UY"/>
+					<xs:enumeration value="UZ"/>
+					<xs:enumeration value="VU"/>
+					<xs:enumeration value="VE"/>
+					<xs:enumeration value="VN"/>
+					<xs:enumeration value="VG"/>
+					<xs:enumeration value="VI"/>
+					<xs:enumeration value="WF"/>
+					<xs:enumeration value="EH"/>
+					<xs:enumeration value="YE"/>
+					<xs:enumeration value="ZM"/>
+					<xs:enumeration value="ZW"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:simpleType name="av.level">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="class"/>
+			<xs:enumeration value="collection"/>
+			<xs:enumeration value="file"/>
+			<xs:enumeration value="item"/>
+			<xs:enumeration value="series"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="am.bundesland">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Baden-Württemberg"/>
+			<xs:enumeration value="Bayern"/>
+			<xs:enumeration value="Berlin"/>
+			<xs:enumeration value="Brandenburg"/>
+			<xs:enumeration value="Bremen"/>
+			<xs:enumeration value="Hamburg"/>
+			<xs:enumeration value="Hessen"/>
+			<xs:enumeration value="Mecklenburg-Vorpommern"/>
+			<xs:enumeration value="Niedersachsen"/>
+			<xs:enumeration value="Nordrhein-Westfalen"/>
+			<xs:enumeration value="Rheinland-Pfalz"/>
+			<xs:enumeration value="Saarland"/>
+			<xs:enumeration value="Sachsen"/>
+			<xs:enumeration value="Sachsen-Anhalt"/>
+			<xs:enumeration value="Schleswig-Holstein"/>
+			<xs:enumeration value="Thüringen"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--<xs:simpleType name="am.role.corpname">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Staatliche Archive"/>
+			<xs:enumeration value="Kommunale Archive"/>
+			<xs:enumeration value="Kirchliche Archive"/>
+			<xs:enumeration value="Herrschafts- und Familienarchive"/>
+			<xs:enumeration value="Wirtschaftsarchive"/>
+			<xs:enumeration value="Archive der Parlamente, politischen Parteien, Stiftungen und Verbände"/>
+			<xs:enumeration value="Medienarchive"/>
+			<xs:enumeration value="Archive der Hochschulen sowie wissenschaftlicher Institutionen"/>
+			<xs:enumeration value="Sonstige"/>
+		</xs:restriction>
+	</xs:simpleType>-->
+	
+	<!--Attribut-Gruppen-->
+	<xs:attributeGroup name="a.common">
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a.desc.c">
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+		<xs:attribute name="level" type="av.level" use="required"/>
+	</xs:attributeGroup>
+	<!--<xs:attributeGroup name="a.desc.c.noidreq">
+		<xs:attribute name="id" type="xs:ID" use="required"/>
+		<xs:attribute name="level" type="av.level" use="required"/>
+	</xs:attributeGroup>-->
+	<xs:attributeGroup name="a.internal.ptr">
+		<xs:attribute name="target" type="xs:IDREF"/>
+		<xs:attribute name="xpointer"/>
+		<xs:attributeGroup ref="xlink:simpleLink"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a.external.ptr">
+		<xs:attribute name="entityref" type="xs:ENTITY"/>
+		<xs:attribute name="xpointer"/>
+		<xs:attributeGroup ref="xlink:simpleLink"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a.loc.internal.ptr">
+		<xs:attributeGroup ref="xlink:locatorLink"/>
+		<xs:attribute name="target" type="xs:IDREF"/>
+		<xs:attribute name="xpointer"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a.loc.external.ptr">
+		<xs:attributeGroup ref="xlink:locatorLink"/>
+		<xs:attribute name="entityref" type="xs:ENTITY"/>
+		<xs:attribute name="xpointer"/>
+	</xs:attributeGroup>
+	<!--Textformatierung-->
+	<xs:group name="m.render">
+		<xs:choice>
+			<xs:element name="emph" type="emph"/>
+			<xs:element name="lb" type="lb"/>
+		</xs:choice>
+	</xs:group>
+	<xs:complexType name="emph" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="lb" type="lb"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="lb"/>
+	<xs:group name="m.refs">
+		<xs:choice>
+			<xs:element name="extref" type="extref"/>
+		</xs:choice>
+	</xs:group>
+	<!--ead-header-->
+	<xs:element name="ead">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="eadheader" type="eadheader"/>
+				<xs:element name="archdesc" type="archdesc"/>
+			</xs:sequence>
+			<xs:attribute name="audience">
+				<xs:simpleType>
+					<xs:restriction base="xs:token">
+						<xs:enumeration value="external"/>
+						<xs:enumeration value="internal"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="eadheader">
+		<xs:sequence>
+			<xs:element name="eadid" type="eadid"/>
+			<xs:element name="filedesc" type="filedesc"/>
+			<xs:element name="profiledesc" type="profiledesc"/>
+		</xs:sequence>
+		<xs:attribute name="langencoding" type="xs:NMTOKEN" fixed="iso639-2b" />
+		<xs:attribute name="scriptencoding" type="xs:NMTOKEN" fixed="iso15924" />
+		<xs:attribute name="dateencoding" type="xs:NMTOKEN" fixed="iso8601" />
+		<xs:attribute name="countryencoding" type="xs:NMTOKEN" fixed="iso3166-1" />
+		<xs:attribute name="repositoryencoding" type="xs:NMTOKEN" fixed="iso15511" />
+	</xs:complexType>
+	<xs:complexType name="eadid" mixed="true">
+		<xs:attribute name="mainagencycode" type="data.repositorycode"/>
+		<xs:attribute name="url"/>
+	</xs:complexType>
+	<xs:complexType name="filedesc">
+		<xs:sequence>
+			<xs:element name="titlestmt" type="titlestmt"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="titlestmt">
+		<xs:sequence>
+			<xs:element name="titleproper" type="titleproper" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="profiledesc">
+		<xs:sequence>
+			<xs:element name="creation" type="creation"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="creation" mixed="false">
+		<xs:choice>
+			<xs:element name="date" type="date"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<!--verschiedene levels und archdesc-->
+	<xs:complexType name="archdesc">
+		<xs:sequence>
+			<xs:element name="did" type="did.archdesc"/>
+			<xs:group ref="m.desc.full.archdesc" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="level" type="av.level" use="required" fixed="collection"/>
+		<xs:attribute name="type" fixed="Tektonik" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="titleproper" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="m.render"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="c">
+		<xs:sequence>
+			<xs:element name="did" type="did"/>
+			<xs:group ref="m.desc.full" minOccurs="0" maxOccurs="1"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="c" type="c"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attributeGroup ref="a.desc.c"/>
+	</xs:complexType>
+	
+	<!-- verschiedenen did-Definitionen je level Ebene-->
+	<xs:complexType name="did.archdesc">
+		<xs:sequence>
+			<xs:group ref="m.did.archdesc" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:group name="m.did.archdesc">
+		<xs:choice>
+			<xs:element name="repository" type="repository" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:group>
+	<xs:complexType name="did">
+		<xs:group ref="m.did"   maxOccurs="unbounded"/>
+	</xs:complexType>
+	<xs:group name="m.did">
+		<xs:choice>
+			<xs:element name="repository" type="repository"/>
+			<xs:element name="unittitle" type="unittitle"/>
+			<xs:element name="abstract" type="abstract"/>
+			<xs:element name="unitid" type="unitid"/>
+		</xs:choice>
+	</xs:group>
+
+	<!--verschiedene desc definitionen je level-Ebene-->
+	<xs:group name="m.desc.base.archdesc">
+		<xs:choice>
+			<xs:element name="otherfindaid" type="otherfindaid"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="m.desc.full.archdesc">
+		<xs:choice>
+			<xs:element name="dsc" type="dsc"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="m.desc.base">
+		<xs:choice>
+			<xs:element name="otherfindaid" type="otherfindaid"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="m.desc.full">
+		<xs:choice>
+			<xs:group ref="m.desc.base"/>
+		</xs:choice>
+	</xs:group>
+
+	<xs:complexType name="dsc">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="c" type="c"/>
+		</xs:choice>
+	</xs:complexType>
+	<!--verschiedene did-Elemente-->
+	<xs:complexType name="abstract" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="m.render"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="unitid" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="lb" type="lb"/>
+		</xs:choice>
+		<xs:attribute name="type"/>
+	</xs:complexType>
+	<xs:complexType name="repository" mixed="false">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="address" type="address"/>
+			<xs:element name="corpname" type="corpname"/>
+			<xs:element name="extref" type="extref"/>
+		</xs:choice>
+		<xs:attribute name="label" type="am.bundesland" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="unittitle" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="m.render"/>
+		</xs:choice>
+		<xs:attribute name="type"/>
+	</xs:complexType>
+	<xs:complexType name="otherfindaid">
+		<xs:choice>
+			<xs:element name="extref" type="extref"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="extref" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="lb" type="lb"/>
+		</xs:choice>
+		<xs:attributeGroup ref="a.external.ptr"/>
+	</xs:complexType>
+	<xs:complexType name="corpname" mixed="true">
+		<xs:attribute name="role" use="required"/>
+		<xs:attribute name="id" type="xs:ID"/>
+	</xs:complexType>
+	<xs:complexType name="date" mixed="true">
+		<xs:attributeGroup ref="am.date.normal"/>
+	</xs:complexType>
+	<xs:complexType name="address">
+		<xs:sequence>
+			<xs:element name="addressline" type="addressline" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="addressline" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="lb" type="lb"/>
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

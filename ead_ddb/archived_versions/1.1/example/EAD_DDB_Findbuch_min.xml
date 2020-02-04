@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/xlink/xlink.xsd">
+	<eadheader>
+		<eadid>Identifier des Findbuchs</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>Bestandstitel</titleproper>
+			</titlestmt>
+		</filedesc>
+		<profiledesc>
+			<creation>
+				<date normal="2013-08-31">Erstellungsdatum des Findbuchs</date>
+			</creation>
+		</profiledesc>
+	</eadheader>
+	<archdesc level="collection" type="Findbuch">
+		<did>
+			<repository>
+				<corpname role="Staatliche Archive">Name des Archivs</corpname>
+			</repository>
+		</did>
+		<dsc>
+			<c level="collection" id="Identifier_des_Findbuchs">
+				<did>
+					<unittitle>Bestandstitel</unittitle>
+				</did>
+				<c level="file" id="Identifier_der_Titelaufnahme1">
+					<did>
+						<unitid>Archivaliensignatur</unitid>
+						<unittitle>Titel der Archivalie</unittitle>
+					</did>
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>
