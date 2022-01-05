@@ -8,7 +8,7 @@ Die Schemata und Beispiele sind abwärtskompatibel zu EAD(DDB) 1.0 bis 1.1, wesh
 
 Im Unterordner `ead_ddb/1.2/example` finden sich Beispieldateien, darunter:
 
-- Minimalbeispiele, welche lediglich die Pflichtbelegung von Elemente und Attributen beinhalten.
+- Minimalbeispiele, welche lediglich die Pflichtbelegung von Elementen und Attributen beinhalten.
 - Maximalbeispiele, welche alle möglichen Elemente und Attribute enthalten. 
 - Optimalbeispiele, welche die für die Darstellung in DDB- und Archivportal sinnvolle Belegung wiedergibt.
 - Neben den EAD-Beispielen wird auch ein Minimal- und Maximalbeispiel für das archivische METS/MODS-Profil mit aufgenommen. So befüllte METS/MODS-Dateien können verwendet werden, um den DFG-Viewer zu bespielen und z.B. in DDB bzw. Archivportal-D verwenden zu können.
