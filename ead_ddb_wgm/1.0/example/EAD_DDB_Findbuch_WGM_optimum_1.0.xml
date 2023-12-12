@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Findbuch EAD(DDB)-WGM 1.0 (Findbuch-Optimalbeispiel)
+	Autoren: Nils Meyer, Oliver Götze
+	Version: Findbuch EAD(DDB)-WGM 1.0
+	Datum: 20231212
+	Dokumentation: https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead
+-->
+
+<ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/xlink/xlink.xsd"
+	audience="external">
+	<eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+		repositoryencoding="iso15511" scriptencoding="iso15924">
+		<eadid mainagencycode="DE-ISIL" url="Link_zur_Übergeordneten_Instition/Archiv"
+			>Identifier_des_Findbuchs</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>Bestandstitel</titleproper>
+			</titlestmt>
+		</filedesc>
+		<profiledesc>
+			<creation>
+				<date normal="2023-12-12">Erstellungsdatum des Findbuchs</date>
+			</creation>
+		</profiledesc>
+	</eadheader>
+	<archdesc level="collection" type="Findbuch">
+		<did>
+			<unitid>Bestandssignatur</unitid>
+			<repository>
+				<corpname role="Staatliche Archive" id="DE-ISIL">Name des Archivs</corpname>
+				<corpname role="Aggregator" use_aggregator_logo="DDB-ID des Aggregators"
+					id="Provider-ID des Aggregators">Name des Aggregators</corpname>
+				<address>
+					<addressline>Adresse des Archivs + Email</addressline>
+				</address>
+				<extref xlink:role="url_archive" xlink:href="Link_zur_Website_des_Archivs">Name des
+					Archivs</extref>
+			</repository>
+		</did>
+		<userestrict>
+			<p>Rechtehinweis</p>
+		</userestrict>
+		<userestrict type="ead">
+			<head>Creative Commons</head>
+			<p><extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0
+					Universal (CC0 1.0) Public Domain Dedication</extref>
+			</p>
+		</userestrict>
+		<userestrict type="dao">
+			<head>Creative Commons</head>
+			<p><extref xlink:href="http://creativecommons.org/licenses/by/3.0/de/">CC-BY
+					3.0</extref>
+			</p>
+		</userestrict>
+		<otherfindaid>
+			<extref xlink:role="url_findbuch" xlink:href="Permalink_zum_Online_Findbuch"> Findbuch
+				im Angebot des Archivs </extref>
+		</otherfindaid>
+		<dsc>
+			<c level="collection" id="Identifier_des_Findbuchs">
+				<did>
+					<unittitle>Bestandstitel</unittitle>
+				</did>
+				<c level="class" id="Identifier_der_Klassifikationsebene">
+					<did>
+						<unittitle>Titel der Klassifikationsebene</unittitle>
+					</did>
+					<c level="series" id="Identifier_der_Serie">
+						<did>
+							<unittitle>Serientitel</unittitle>
+						</did>
+						<c level="file" id="Identifier_der_Titelaufnahme">
+							<did>
+								<unitid>Bestellsignatur</unitid>
+								<unitid type="Altsignatur">Altsignatur</unitid>
+								<unitid type="AZ">Aktenzeichen</unitid>
+								<unitid type="BZK">BZK-Nummer</unitid>
+								<unittitle>Titel der Archivalie</unittitle>
+								<unitdate normal="1900-01-01/1902-12-31">Laufzeit</unitdate>
+								<unitdate label="Nachlaufzeit" normal="1990-01-01/1992-12-31"
+									>Nachlaufzeit</unitdate>
+								<abstract type="enthält">Enthältvermerk</abstract>
+								<abstract type="darin">Darinvermerk</abstract>
+								<origination label="Provenienz">
+									<name source="Normvokabularname"
+										authfilenumber="Normvokabular_Nummer">Provenienz</name>
+								</origination>
+								<origination label="pre">Vorprovenienz</origination>
+								<origination label="Autor">Urheber</origination>
+								<physdesc> Allgemeine Formalbeschreibung </physdesc>
+								<physdesc>
+									<genreform normal="Karten und Pläne">Archivalientyp</genreform>
+									<dimensions>Maße</dimensions>
+									<extent>Umfang</extent>
+								</physdesc>
+								<materialspec>Material</materialspec>
+								<langmaterial>
+									<language langcode="ger" scriptcode="Latn">Sprache der
+										Unterlagen</language>
+								</langmaterial>
+								<note>
+									<p>Unspezifische_Bemerkungen</p>
+								</note>
+							</did>
+							<otherfindaid>
+								<extref xlink:role="url_archivalunit"
+									xlink:href="Permalink_zur_Anzeige_im_Herkunftssystem"
+									>Titelaufnahme im Angebot des Archivs</extref>
+							</otherfindaid>
+							<accessrestrict>
+								<p>Rechtsgrundlage Schutzfrist als Freitext - Text der
+									Rechtsgrundlage</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">Datum der Schutzfrist</date>
+										<event>Schutzfrist</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<accessrestrict>
+								<p>Rechtsgrundlage Schutzfrist als Freitext - Text der
+									Rechtsgrundlage</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">Datum der Schutzfrist</date>
+										<event>Schutzfrist Personen</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<accessrestrict>
+								<p>Rechtsgrundlage Sperrfrist als Freitext - Text der
+									Rechtsgrundlage</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">Datum der Sperrfrist</date>
+										<event>Sperrfrist</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<accessrestrict>
+								<p>Akteneinsicht / Freigabe durch Hinterbliebene vor Ablauf der
+									Schutzfrist - Akteneinsicht Text</p>
+							</accessrestrict>
+							<userestrict>
+								<p>Nutzungsbedingungen Anmerkungen, z.B. bei RvfZ oder in
+									Copyright</p>
+							</userestrict>
+							<userestrict type="ead">
+								<p><extref
+										xlink:href="http://creativecommons.org/publicdomain/zero/1.0/"
+										>CC0 1.0 Universal (CC0 1.0) Public Domain
+										Dedication</extref></p>
+							</userestrict>
+							<userestrict type="dao">
+								<p><extref xlink:href="Link zur Rechteangabe">Text zur
+										Rechteangabe</extref></p>
+							</userestrict>
+							<index>
+								<indexentry>
+									<persname authfilenumber="GND-Nummer" source="GND">Weitere in
+										der Akte genannte Person</persname>
+								</indexentry>
+								<indexentry>
+									<corpname authfilenumber="GND-Nummer" source="GND">Weitere in
+										der Akte genannte Körperschaft</corpname>
+								</indexentry>
+							</index>
+							<controlaccess>
+								<!-- Für jede Person ist ein eigenes controlaccess-Element anzulegen -->
+								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des name-Elements ist nicht ausreichend. -->
+								<list>
+									<item>
+										<name role="WGM-ID" authfilenumber="GND-Nummer" source="GND"
+											>WGM-ID der Person</name>
+									</item>
+									<item>
+										<name role="Rolle" normal="Verfolgter/Antragsteller"/>
+									</item>
+									<!-- Zulässige Werte für @normal: "Verfolgter", "Antragsteller" -->
+									<item>
+										<persname role="Nachname">Nachname</persname>
+									</item>
+									<item>
+										<persname role="Vorname">Vorname</persname>
+									</item>
+									<item>
+										<persname role="Geburtsname">Geburtsname</persname>
+									</item>
+									<item>
+										<name role="akademischer Titel" normal="akademischer Titel"
+										/>
+									</item>
+									<!-- Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
+									<item>
+										<persname role="weitere Nachnamen">weitere
+											Nachnamen</persname>
+									</item>
+									<item>
+										<persname role="weitere Vornamen">weitere
+											Vornamen</persname>
+									</item>
+									<item>
+										<geogname role="Geburtsort" authfilenumber="GND-Nummer"
+											source="GND">Geburtsort</geogname>
+									</item>
+									<item>
+										<geogname role="Sterbeort vor 1947"
+											authfilenumber="GND-Nummer" source="GND">Sterbeort vor
+											1947</geogname>
+										<note label="Sterbeort vor 1947">
+											<p>vermutet</p>
+										</note>
+										<!-- Ein vermuteter Sterbeort entsprechend dem Metadatenkatalog kann über das Element "note" wie hier angegeben gekennzeichnet werden. Ist der Sterbeort nicht vermutet, ist das Element "note" wegzulassen. -->
+									</item>
+									<item>
+										<geogname role="letzter Wohnort" authfilenumber="GND-Nummer"
+											source="GND">Letzter Wohnort</geogname>
+									</item>
+									<item>
+										<geogname role="Wohnort bei Antragstellung"
+											authfilenumber="GND-Nummer" source="GND">Wohnort bei
+											Antragstellung</geogname>
+									</item>
+									<item>
+										<date type="Geburtsdatum" certainty="uncertain"
+											normal="1901-01-01">Geburtsdatum</date>
+									</item>
+									<!-- Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributwert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<date type="Sterbedatum" certainty="uncertain"
+											normal="1945-01-01">Sterbedatum</date>
+									</item>
+									<!-- Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributwert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<name role="Geschlecht" normal="Geschlechtsangabe"/>
+									</item>
+									<!-- Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt" -->
+									<item>
+										<geogname role="Staatsangehörigkeit vor der Verfolgung"
+											normal="Staatsangehörigkeitsangabe"/>
+									</item>
+									<!-- Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
+									<item>
+										<geogname role="Staatsangehörigkeit bei Antragstellung"
+											normal="Staatsangehörigkeitsangabe"/>
+									</item>
+									<!-- Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
+									<item>
+										<name role="erlernter Beruf" authfilenumber="GND-Nummer"
+											source="GND">Berufsangabe</name>
+									</item>
+									<item>
+										<name role="Beruf bei Antragstellung"
+											authfilenumber="GND-Nummer" source="GND"
+											>Berufsangabe</name>
+									</item>
+									<item>
+										<note>
+											<p>weitere Angaben zur Person</p>
+										</note>
+									</item>
+									<item>
+										<corpname role="institutioneller Antragsteller"
+											authfilenumber="GND-Nummer"
+											source="GND">Name der Institution</corpname>
+									</item>
+									<item>
+										<name role="Beziehung zur verfolgten Person">Angabe der
+											Beziehung</name>
+									</item>
+									<item>
+										<name role="Verfolgungsgrund"
+											normal="Angabe des Verfolgungsgrunds"/>
+									</item>
+									<!-- Dieses Element entspricht Feld 35 des Metadatenkatalogs. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
+									<item>
+										<name role="Verfolgungsgrund Spezifizierung"
+											normal="Angabe des Verfolgungsgrunds">Verfolgungsgrund:
+											Stichwort oder Mitgliedschaft aus Auswahlliste oder Freitext</name>
+									</item>
+									<!-- Dieses Element entspricht Feld 36 bis 40 des Metadatenkatalogs. Zulässige Werte für @normal: "politische Überzeugung", "Glaube und Weltanschauung", "Rasse", "weitere Verfolgtengruppen", "weitere Verfolgungsmerkmale. Der Elementinhalt enthält die gemäß Metadatenkatalog als Freitext eingegebenen oder aus der Auswahlliste gewählten näher spezifizierenden Angaben." -->
+									<item>
+										<name role="Verfolgungsgegenstand">Angaben zum
+											Verfolgungsgegenstand</name>
+									</item>
+									<item>
+										<name
+											role="Deportation, Inhaftierung, Anstaltsunterbringung"
+											>Angaben zu Deportation, Inhaftierung,
+											Anstaltsunterbringung</name>
+									</item>
+									<item>
+										<name role="Illegalität">Angaben zum Leben in
+											Illegalität</name>
+									</item>
+									<item>
+										<name role="Zwangsarbeit" normal="ja/nein">Angaben zur
+											Zwangsarbeit</name>
+									</item>
+									<!-- Zulässige Werte für @normal: "ja", "nein" -->
+									<item>
+										<name role="Zwangssterilisierung" normal="ja/nein"/>
+									</item>
+									<!-- Zulässige Werte für @normal: "ja", "nein" -->
+									<item>
+										<name role="Emigration" normal="ja/nein">Angaben zur
+											Emigration</name>
+									</item>
+									<!-- Zulässige Werte für @normal: "ja", "nein" -->
+								</list>
+							</controlaccess>
+							<odd>
+								<head>sonstige Erschließungsangaben Überschrift</head>
+								<p>sonstige Erschließungsangaben</p>
+							</odd>
+							<daogrp>
+								<daodesc>
+									<list>
+										<item>
+											<name>Inhaltliche Metadaten zum Digitalisat: Bildname
+												oder Seitenzahl</name>
+											<title>Inhaltliche Metadaten zum Digitalisat in Form
+												einer Beschreibung</title>
+											<genreform>TEXT</genreform>
+										</item>
+									</list>
+								</daodesc>
+								<daoloc xlink:role="image_full"
+									xlink:href="Link_zum_Bild (freistehend, nicht in einem Viewer)"/>
+								<daoloc xlink:role="externer_viewer"
+									xlink:href="Link_zum_Viewer_im_Herkunftssystem"/>
+								<daoloc xlink:role="METS" xlink:href="Link_zur_Metsdatei"/>
+							</daogrp>
+							<!-- Auf der item-Ebene sind alle Elemente der file-Ebene wiederverwendbar -->
+							<c level="item" id="Identifier_des_Vorgangs">
+								<did>
+									<unittitle>Vorgangstitel</unittitle>
+								</did>
+							</c>
+						</c>
+					</c>
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>

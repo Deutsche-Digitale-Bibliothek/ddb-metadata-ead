@@ -4,6 +4,7 @@
 	Autor: Oliver Götze, Matthias Forster, Martin Reisacher
 	Version: Tektonik EAD(DDB) 1.2
 	Datum: 20190218
+	Dokumentation: https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead
 -->
 <ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
