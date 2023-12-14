@@ -3,7 +3,7 @@
 	Findbuch EAD(DDB)-WGM 1.0 (Findbuch-Optimalbeispiel)
 	Autoren: Nils Meyer, Oliver Götze
 	Version: Findbuch EAD(DDB)-WGM 1.0
-	Datum: 20231212
+	Datum: 20231214
 	Dokumentation: https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead
 -->
 
@@ -177,9 +177,9 @@
 											>WGM-ID der Person</name>
 									</item>
 									<item>
-										<name role="Rolle" normal="Verfolgter/Antragsteller"/>
+										<name role="Rolle" normal="verfolgt/antragstellend"/>
 									</item>
-									<!-- Zulässige Werte für @normal: "Verfolgter", "Antragsteller" -->
+									<!-- Zulässige Werte für @normal: "verfolgt", "antragstellend" -->
 									<item>
 										<persname role="Nachname">Nachname</persname>
 									</item>
