@@ -28,6 +28,7 @@ Weitere Informationen zum EAD(DDB)-WGM-Anwendungsprofil finden sich in der [Doku
 Über Verbesserungsvorschläge bzw. Fehlerberichte freuen wir uns. Diese können Sie unter [Issues](https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead/issues) anlegen.
 
 ## Changelog
+- 2013-12-14: Beispieldatei für EAD(DDB)-WGM 1.0 – Zulässige Werte des Feldes "Rolle" korrigiert.
 - 2023-12-12: Beispieldatei für EAD(DDB)-WGM 1.0 hinzugefügt. Link zur Dokumentation in Beispieldateien für EAD(DDB) 1.2 ergänzt.
 - 2020-02-04: Beispieldateien und Schemata für EAD(DDB) 1.1 zur Dokumentation hinterlegt. [Neue Dokumentation](https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=19010180) verlinkt.
 - 2019-11-28: EAD(DDB) 1.2 Findbuch-XSD (Bugfix): `//c[@level="file"]/did/unitid` und `/ead/archdesc/otherfindaid` nicht als Pflichtelement behandeln.
