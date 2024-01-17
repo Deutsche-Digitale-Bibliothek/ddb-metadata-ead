@@ -28,7 +28,7 @@ Weitere Informationen zum EAD(DDB)-WGM-Anwendungsprofil finden sich in der [Doku
 Über Verbesserungsvorschläge bzw. Fehlerberichte freuen wir uns. Diese können Sie unter [Issues](https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead/issues) anlegen.
 
 ## Changelog
-- 2023-12-16: Beispieldatei für EAD(DDB)-WGM - fehlerbereinigte und erweiterte Version 1.1 veröffentlicht. Die bisherige Version 1.0 wird nicht mehr gepflegt.
+- 2024-01-16: Beispieldatei für EAD(DDB)-WGM - fehlerbereinigte und erweiterte Version 1.1 veröffentlicht. Die bisherige Version 1.0 wird nicht mehr gepflegt.
   - Erklärende Kommentare mit Verweis auf Feldnummern des Metadatenkatalogs ergänzt
   - Vorauswahl-Wert für das Feld Archivalientyp (`//c/did/physdesc/genreform`) festgelegt
   - Feld 31 analog zu natürlichen Personen (die sowohl „antragstellend“ als auch „verfolgt“ sein können) offener betitelt
