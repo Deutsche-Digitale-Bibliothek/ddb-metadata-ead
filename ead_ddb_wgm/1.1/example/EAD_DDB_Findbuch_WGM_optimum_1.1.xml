@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Findbuch EAD(DDB)-WGM 1.1 (Findbuch-Optimalbeispiel)
+	Autoren: Nils Meyer, Oliver Götze
+	Version: Findbuch EAD(DDB)-WGM 1.1
+	Datum: 20240116
+	Dokumentation: https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead
+-->
+
+<ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/xlink/xlink.xsd"
+	audience="external">
+	<eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+		repositoryencoding="iso15511" scriptencoding="iso15924">
+		<eadid mainagencycode="DE-ISIL" url="Link_zur_Übergeordneten_Instition/Archiv"
+			>Identifier_des_Findbuchs</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>Bestandstitel</titleproper>
+			</titlestmt>
+		</filedesc>
+		<profiledesc>
+			<creation>
+				<date normal="2024-01-16">Erstellungsdatum des Findbuchs</date>
+			</creation>
+		</profiledesc>
+	</eadheader>
+	<archdesc level="collection" type="Findbuch">
+		<did>
+			<unitid>Bestandssignatur</unitid>
+			<repository>
+				<corpname role="Staatliche Archive" id="DE-ISIL">Name des Archivs</corpname>
+				<corpname role="Aggregator" use_aggregator_logo="DDB-ID des Aggregators"
+					id="Provider-ID des Aggregators">Name des Aggregators</corpname>
+				<address>
+					<addressline>Adresse des Archivs + Email</addressline>
+				</address>
+				<extref xlink:role="url_archive" xlink:href="Link_zur_Website_des_Archivs">Name des
+					Archivs</extref>
+			</repository>
+		</did>
+		<userestrict>
+			<p>Rechtehinweis</p>
+		</userestrict>
+		<userestrict type="ead">
+			<head>Creative Commons</head>
+			<p><extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0
+					Universal (CC0 1.0) Public Domain Dedication</extref>
+			</p>
+		</userestrict>
+		<userestrict type="dao">
+			<head>Creative Commons</head>
+			<p><extref xlink:href="http://creativecommons.org/licenses/by/3.0/de/">CC-BY
+					3.0</extref>
+			</p>
+		</userestrict>
+		<otherfindaid>
+			<extref xlink:role="url_findbuch" xlink:href="Permalink_zum_Online_Findbuch"> Findbuch
+				im Angebot des Archivs </extref>
+		</otherfindaid>
+		<dsc>
+			<c level="collection" id="Identifier_des_Findbuchs">
+				<did>
+					<unittitle>Bestandstitel</unittitle>
+				</did>
+				<c level="class" id="Identifier_der_Klassifikationsebene">
+					<did>
+						<unittitle>Titel der Klassifikationsebene</unittitle>
+					</did>
+					<c level="series" id="Identifier_der_Serie">
+						<did>
+							<unittitle>Serientitel</unittitle>
+						</did>
+						<!-- Kommentare beziehen sich jeweils auf das unmittelbar folgende Element und dessen Attribute und Kindelemente. -->
+						<c level="file" id="Identifier_der_Titelaufnahme">
+							<did>
+								<!-- Feld 52 und 53 -->
+								<unitid>Bestellsignatur mit vorangestelltem Archivkürzel</unitid>
+								<!-- Feld 57 -->
+								<unitid type="AZ">Aktenzeichen</unitid>
+								<!-- Feld 58 -->
+								<unitid type="BZK">BZK-Nummer</unitid>
+								<!-- Feld 59 -->
+								<unitid type="Vorsignatur">Vorsignaturen</unitid>
+								<!-- Der im Portal anzuzeigende Titel wird beim Ingest ins Portal gebildet -->
+								<unittitle>Titel des Archivales</unittitle>
+								<!-- Feld 54 -->
+								<origination label="Provenienz">
+									<name source="Normvokabularname"
+										authfilenumber="Normvokabular_Nummer">Provenienz</name>
+								</origination>
+								<origination label="pre">Vorprovenienz</origination>
+								<origination label="Autor">Urheber</origination>
+								<!-- Feld 55 -->
+								<unitdate normal="1900-01-01/1902-12-31">Laufzeit</unitdate>
+								<!-- Feld 56 -->
+								<unitdate label="abweichende Laufzeit"
+									normal="1990-01-01/1992-12-31">abweichende Laufzeit</unitdate>
+								<!-- Feld 69 -->
+								<abstract type="enthält">Enthältvermerk</abstract>
+								<!-- Feld 70 -->
+								<abstract type="darin">Darinvermerk</abstract>
+								<physdesc> Allgemeine Formalbeschreibung </physdesc>
+								<physdesc>
+									<!-- Zulässige Werte für @normal: "Sachakte", "Einzelfallakte nach BEG". Liste muss laufend ergänzt werden! -->
+									<genreform normal="Angabe des Archivalientyps"
+										>Archivalientyp</genreform>
+									<dimensions>Maße</dimensions>
+									<extent>Umfang</extent>
+								</physdesc>
+								<materialspec>Material</materialspec>
+								<langmaterial>
+									<language langcode="ger" scriptcode="Latn">Sprache der
+										Unterlagen</language>
+								</langmaterial>
+								<!-- Feld 71 -->
+								<note>
+									<p>Unspezifische_Bemerkungen</p>
+								</note>
+							</did>
+							<odd>
+								<head>sonstige Erschließungsangaben Überschrift</head>
+								<p>sonstige Erschließungsangaben</p>
+							</odd>
+							<otherfindaid>
+								<extref xlink:role="url_archivalunit"
+									xlink:href="Permalink_zur_Anzeige_im_Herkunftssystem"
+									>Titelaufnahme im Angebot des Archivs</extref>
+							</otherfindaid>
+							<!-- Feld 50 -->
+							<relatedmaterial type="andere Verfahren">
+								<p>Verweis auf andere Verfahren</p>
+							</relatedmaterial>
+							<!-- Feld 60 -->
+							<relatedmaterial type="andere Archivalien">
+								<p>Verweis auf andere Archivalien</p>
+							</relatedmaterial>
+							<!-- Feld 62 und 63. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<accessrestrict>
+								<p>Rechtsgrundlage Schutzfrist als Freitext - Text der
+									Rechtsgrundlage</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">Datum der Schutzfrist</date>
+										<event>Schutzfrist Personen</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<!-- Feld 64 und 65. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<accessrestrict>
+								<p>Rechtsgrundlage Schutzfrist als Freitext - Text der
+									Rechtsgrundlage</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">Datum der Schutzfrist</date>
+										<event>Schutzfrist</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<!-- Feld 66 und 67. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<accessrestrict>
+								<p>Rechtsgrundlage Sperrfrist als Freitext - Text der
+									Rechtsgrundlage</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">Datum der Sperrfrist</date>
+										<event>Sperrfrist</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<!-- Feld 68 -->
+							<accessrestrict>
+								<p>Akteneinsicht / Freigabe durch Hinterbliebene vor Ablauf der
+									Schutzfrist - Akteneinsicht Text</p>
+							</accessrestrict>
+							<userestrict>
+								<p>Nutzungsbedingungen Anmerkungen, z.B. bei RvfZ oder in
+									Copyright</p>
+							</userestrict>
+							<userestrict type="ead">
+								<p><extref
+										xlink:href="http://creativecommons.org/publicdomain/zero/1.0/"
+										>CC0 1.0 Universal (CC0 1.0) Public Domain
+										Dedication</extref></p>
+							</userestrict>
+							<userestrict type="dao">
+								<p><extref xlink:href="Link zur Rechteangabe">Text zur
+										Rechteangabe</extref></p>
+							</userestrict>
+							<index>
+								<!-- Feld 51 -->
+								<indexentry>
+									<corpname role="andere zuständige Behörde"
+										authfilenumber="GND-Nummer" source="GND">andere zuständige
+										Behörde</corpname>
+								</indexentry>
+								<!-- Feld 61 -->
+								<indexentry>
+									<persname authfilenumber="GND-Nummer" source="GND">Weitere in
+										der Akte genannte Person</persname>
+								</indexentry>
+								<!-- Feld 61 -->
+								<indexentry>
+									<corpname authfilenumber="GND-Nummer" source="GND">Weitere in
+										der Akte genannte Körperschaft</corpname>
+								</indexentry>
+								<!-- Feld 47 und 48. Zulässige Werte für @normal: "Schaden an Leben", "Schaden an Freiheit", "Schaden an Körper und Gesundheit", "Schaden an Eigentum und Vermögen", "Schaden im beruflichen und wirtschaftlichen Fortkommen", "Versicherungsschäden", "Soforthilfe für Rückwanderer" -->
+								<indexentry>
+									<name role="Schadensarten" normal="Angabe der Schadensart"
+										authfilenumber="GND-Nummer" source="GND">Weitere Angaben zu
+										Schadensarten oder zum Verfahren</name>
+								</indexentry>
+								<!-- Feld 49. Zulässige Werte für @normal: "ja", "nein" -->
+								<indexentry>
+									<name role="Provenienzforschung" normal="ja/nein"/>
+								</indexentry>
+							</index>
+							<controlaccess>
+								<!-- Für jede Person ist ein eigenes controllaccess-Element anzulegen -->
+								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des Namens-Elements ist nicht ausreichend. -->
+								<list>
+									<!-- Feld 22 und 34. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
+									<item>
+										<name role="WGM-ID" authfilenumber="GND-Nummer" source="GND"
+											>WGM-ID der Person</name>
+									</item>
+									<!-- Zulässige Werte für @normal: "Verfolgter", "Antragsteller" -->
+									<item>
+										<name role="Rolle" normal="verfolgt/antragstellend"/>
+									</item>
+									<!-- Feld 31 -->
+									<item>
+										<corpname role="juristische Person"
+											authfilenumber="GND-Nummer" source="GND">Name der
+											Institution</corpname>
+									</item>
+									<!-- Feld 1 und 23 -->
+									<item>
+										<persname role="Nachname">Nachname</persname>
+									</item>
+									<!-- Feld 2 und 24 -->
+									<item>
+										<persname role="Vorname">Vorname</persname>
+									</item>
+									<!-- Feld 3 und 25 -->
+									<item>
+										<persname role="Geburtsname">Geburtsname</persname>
+									</item>
+									<!-- Feld 4 und 26. Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
+									<item>
+										<name role="akademischer Titel" normal="akademischer Titel"
+										/>
+									</item>
+									<!-- Feld 5 und 27 -->
+									<item>
+										<persname role="weitere Nachnamen">weitere
+											Nachnamen</persname>
+									</item>
+									<!-- Feld 6 und 28 -->
+									<item>
+										<persname role="weitere Vornamen">weitere
+											Vornamen</persname>
+									</item>
+									<!-- Feld 7 -->
+									<item>
+										<geogname role="Geburtsort" authfilenumber="GND-Nummer"
+											source="GND">Geburtsort</geogname>
+									</item>
+									<!-- Feld 8 und 9. Ein vermuteter Sterbeort entsprechend dem Metadatenkatalog kann über das Element "note" wie hier angegeben gekennzeichnet werden. Ist der Sterbeort nicht vermutet, ist das Element "note" wegzulassen. -->
+									<item>
+										<geogname role="Sterbeort vor 1947"
+											authfilenumber="GND-Nummer" source="GND">Sterbeort vor
+											1947</geogname>
+										<note label="Sterbeort vor 1947">
+											<p>vermutet</p>
+										</note>
+									</item>
+									<!-- Feld 10 -->
+									<item>
+										<geogname role="letzter Wohnort" authfilenumber="GND-Nummer"
+											source="GND">Letzter Wohnort</geogname>
+									</item>
+									<!-- Feld 11 -->
+									<item>
+										<geogname role="Wohnort bei Antragstellung"
+											authfilenumber="GND-Nummer" source="GND">Wohnort bei
+											Antragstellung</geogname>
+									</item>
+									<!-- Feld 12 und 13 sowie 29. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<date type="Geburtsdatum" certainty="uncertain"
+											normal="1901-01-01">Geburtsdatum</date>
+									</item>
+									<!-- Feld 14 und 15 sowie 30. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<date type="Sterbedatum" certainty="uncertain"
+											normal="1945-01-01">Sterbedatum</date>
+									</item>
+									<!-- Feld 16. Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt". -->
+									<item>
+										<name role="Geschlecht" normal="Geschlechtsangabe"/>
+									</item>
+									<!-- Feld 17. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden.-->
+									<item>
+										<geogname role="Staatsangehörigkeit vor der Verfolgung"
+											normal="Staatsangehörigkeitsangabe"/>
+									</item>
+									<!-- Feld 18. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
+									<item>
+										<geogname role="Staatsangehörigkeit bei Antragstellung"
+											normal="Staatsangehörigkeitsangabe"/>
+									</item>
+									<!-- Feld 19 -->
+									<item>
+										<name role="erlernter Beruf" authfilenumber="GND-Nummer"
+											source="GND">Berufsangabe</name>
+									</item>
+									<!-- Feld 20 -->
+									<item>
+										<name role="Beruf bei Antragstellung"
+											authfilenumber="GND-Nummer" source="GND"
+											>Berufsangabe</name>
+									</item>
+									<!-- Feld 21 und 33 -->
+									<item>
+										<note>
+											<p>weitere Angaben zur Person</p>
+										</note>
+									</item>
+									<!-- Feld 32 -->
+									<item>
+										<name role="Beziehung zur verfolgten Person">Angabe der
+											Beziehung</name>
+									</item>
+									<!-- Feld 35. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
+									<item>
+										<name role="Verfolgungsgrund"
+											normal="Angabe des Verfolgungsgrunds"/>
+									</item>
+									<!-- Feld 36 bis 40. Zulässige Werte für @normal: "politische Überzeugung", "Glaube und Weltanschauung", "Rasse", "weitere Verfolgtengruppen", "weitere Verfolgungsmerkmale. Der Elementinhalt enthält die gemäß Metadatenkatalog als Freitext eingegebenen oder aus der Auswahlliste gewählten näher spezifizierenden Angaben." -->
+									<item>
+										<name role="Verfolgungsgrund Spezifizierung"
+											normal="Angabe des Verfolgungsgrunds">Verfolgungsgrund:
+											Stichwort oder Mitgliedschaft aus Auswahlliste oder
+											Freitext</name>
+									</item>
+									<!-- Feld 41 -->
+									<item>
+										<name role="Verfolgungsgegenstand">Angaben zum
+											Verfolgungsgegenstand</name>
+									</item>
+									<!-- Feld 42 -->
+									<item>
+										<name
+											role="Deportation, Inhaftierung, Anstaltsunterbringung"
+											>Angaben zu Deportation, Inhaftierung,
+											Anstaltsunterbringung</name>
+									</item>
+									<!-- Feld 43 -->
+									<item>
+										<name role="Illegalität">Angaben zum Leben in
+											Illegalität</name>
+									</item>
+									<!-- Feld 44. Zulässige Werte für @normal: "ja", "nein". -->
+									<item>
+										<name role="Zwangsarbeit" normal="ja/nein">Angaben zur
+											Zwangsarbeit</name>
+									</item>
+									<!-- Feld 45. Zulässige Werte für @normal: "ja", "nein". -->
+									<item>
+										<name role="Zwangssterilisierung" normal="ja/nein"/>
+									</item>
+									<!-- Feld 46. Zulässige Werte für @normal: "ja", "nein". -->
+									<item>
+										<name role="Emigration" normal="ja/nein">Angaben zur
+											Emigration</name>
+									</item>
+								</list>
+							</controlaccess>
+							<daogrp>
+								<daodesc>
+									<list>
+										<item>
+											<name>Inhaltliche Metadaten zum Digitalisat: Bildname
+												oder Seitenzahl</name>
+											<title>Inhaltliche Metadaten zum Digitalisat in Form
+												einer Beschreibung</title>
+											<genreform>TEXT</genreform>
+										</item>
+									</list>
+								</daodesc>
+								<daoloc xlink:role="image_full"
+									xlink:href="Link_zum_Bild (freistehend, nicht in einem Viewer)"/>
+								<daoloc xlink:role="externer_viewer"
+									xlink:href="Link_zum_Viewer_im_Herkunftssystem"/>
+								<daoloc xlink:role="METS" xlink:href="Link_zur_Metsdatei"/>
+							</daogrp>
+							<!-- Auf der item-Ebene sind alle Elemente der file-Ebene wiederverwendbar -->
+							<c level="item" id="Identifier_des_Vorgangs">
+								<did>
+									<unittitle>Vorgangstitel</unittitle>
+								</did>
+							</c>
+						</c>
+					</c>
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>

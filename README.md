@@ -16,18 +16,26 @@ Im Unterordner `ead_ddb/1.2/example` finden sich Beispieldateien, darunter:
 Im Unterordner `ead_ddb/1.2/schema` finden Sie XML-Schema-Dateien zur Validierung von EAD(DDB)-Dateien. Vorzugsweise sollten die Schemata nach der Schema-Definition 1.1 (`..._XSD1.1.xsd`) verwendet werden, da diese eine wesentlich genauere Abprüfung der Validierungsregeln erlauben. Für XML-Parser, die XSD 1.1 nicht unterstützen, werden die Schemata auch in Version 1.0 bereitgestellt.
 
 ### EAD(DDB)-WGM
-Im Unterordner `ead_ddb_wgm/1.0/example` findet sich eine Findbuch-Beispieldatei für das EAD(DDB)-WGM-Anwendungsprofil zur Verwendung im [Themenportal Wiedergutmachung](https://www.archivportal-d.de/themenportale/wiedergutmachung). 
+Im Unterordner `ead_ddb_wgm/1.1/example` findet sich eine Findbuch-Beispieldatei für das EAD(DDB)-WGM-Anwendungsprofil zur Verwendung im [Themenportal Wiedergutmachung](https://www.archivportal-d.de/themenportale/wiedergutmachung). 
 Die Beispieldatei basiert auf der jeweils aktuellen Version von EAD(DDB) 1.2.
 
 XML-Schema-Dateien zur Validierung entsprechender XML-Dateien werden im Laufe des Jahres 2024 zur Verfügung gestellt.
 
-Weitere Informationen zum EAD(DDB)-WGM-Anwendungsprofil finden sich in der [Dokumentation](https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=19010180).
+Weitere Informationen zum EAD(DDB)-WGM-Anwendungsprofil finden sich in der [Dokumentation](https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=126518213).
 
 ## Errata
 
 Über Verbesserungsvorschläge bzw. Fehlerberichte freuen wir uns. Diese können Sie unter [Issues](https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead/issues) anlegen.
 
 ## Changelog
+- 2023-12-16: Beispieldatei für EAD(DDB)-WGM - fehlerbereinigte und erweiterte Version 1.1 veröffentlicht. Die bisherige Version 1.0 wird nicht mehr gepflegt.
+  - Erklärende Kommentare mit Verweis auf Feldnummern des Metadatenkatalogs ergänzt
+  - Vorauswahl-Wert für das Feld Archivalientyp (`//c/did/physdesc/genreform`) festgelegt
+  - Feld 31 analog zu natürlichen Personen (die sowohl „antragstellend“ als auch „verfolgt“ sein können) offener betitelt
+  - Feld 47, 48 und 49 hinzugefügt
+  - Feld 50, 51, 60 spezifiziert
+  - Feld 56 entsprechend dem Metadatenkatalog in „abweichende Laufzeit“ geändert
+  - Feld 59 entsprechend dem Metadatenkatalog in „Vorsignaturen“ geändert
 - 2013-12-14: Beispieldatei für EAD(DDB)-WGM 1.0 – Zulässige Werte des Feldes "Rolle" korrigiert.
 - 2023-12-12: Beispieldatei für EAD(DDB)-WGM 1.0 hinzugefügt. Link zur Dokumentation in Beispieldateien für EAD(DDB) 1.2 ergänzt.
 - 2020-02-04: Beispieldateien und Schemata für EAD(DDB) 1.1 zur Dokumentation hinterlegt. [Neue Dokumentation](https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=19010180) verlinkt.
