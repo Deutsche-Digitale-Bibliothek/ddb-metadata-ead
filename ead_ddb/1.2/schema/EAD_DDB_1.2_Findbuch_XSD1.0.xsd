@@ -5,6 +5,7 @@
 	Version: Findbuch EAD(DDB) 1.2
 	Datum: 20191128
 	based on: http://www.loc.gov/ead/ead.xsd
+    for EAD 2002
 -->
 <xs:schema xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:isbn:1-931666-22-9"
@@ -1337,7 +1338,6 @@
     <xs:complexType name="subject" mixed="true">
         <xs:group ref="m.render" minOccurs="0" maxOccurs="unbounded"/>
         <xs:attributeGroup ref="a.access"/>
-        <xs:attribute name="role"/>
     </xs:complexType>
     <xs:complexType name="index.corpname" mixed="true">
         <xs:group ref="m.render" minOccurs="0" maxOccurs="unbounded"/>
