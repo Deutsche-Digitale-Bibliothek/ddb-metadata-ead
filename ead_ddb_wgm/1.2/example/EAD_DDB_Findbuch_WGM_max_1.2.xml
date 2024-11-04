@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:isbn:1-931666-22-9"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/xlink/xlink.xsd"
+	audience="external">
+	<eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+		repositoryencoding="iso15511" scriptencoding="iso15924">
+		<eadid mainagencycode="DE-1951">Identifier_des_Findbuchs</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper>Testbestand Entschädigungsakten</titleproper>
+			</titlestmt>
+		</filedesc>
+		<profiledesc>
+			<creation>
+				<date normal="2024-01-16">Erstellungsdatum des Findbuchs</date>
+			</creation>
+		</profiledesc>
+	</eadheader>
+	<archdesc level="collection" type="Findbuch">
+		<did>
+			<unitid>LABW WGM 1</unitid>
+			<repository>
+				<corpname role="Staatliche Archive" id="DE-1951">Landesarchiv
+					Baden-Württemberg</corpname>
+				<address>
+					<addressline>Adresse des Archivs + Email</addressline>
+				</address>
+				<extref xlink:role="url_archive" xlink:href="https://www.landesarchiv-bw.de/"
+					>Landesarchiv Baden-Württemberg</extref>
+			</repository>
+		</did>
+		<userestrict>
+			<p>Rechtehinweis</p>
+		</userestrict>
+		<userestrict type="ead">
+			<head>Creative Commons</head>
+			<p><extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0
+					Universal (CC0 1.0) Public Domain Dedication</extref>
+			</p>
+		</userestrict>
+		<userestrict type="dao">
+			<head>Creative Commons</head>
+			<p><extref xlink:href="https://creativecommons.org/publicdomain/mark/1.0/deed.de">Public
+					Domain Mark 1.0 - Weltweit frei von bekannten urheberrechtlichen
+					Einschränkungen</extref>
+			</p>
+		</userestrict>
+		<otherfindaid>
+			<extref xlink:role="url_findbuch"
+				xlink:href="http://www.landesarchiv-bw.de/plink/?f=2-2947"> Findbuch im Angebot des
+				Archivs </extref>
+		</otherfindaid>
+		<dsc>
+			<c level="collection" id="WGM1">
+				<did>
+					<unittitle>Testbestand Entschädigungsakten</unittitle>
+				</did>
+				<c level="class" id="WGM1-1">
+					<did>
+						<unittitle>Entschädigungsakten nach BEG</unittitle>
+					</did>
+					<c level="series" id="WGM-1-1-1">
+						<did>
+							<unittitle>Antragsjahr 1954</unittitle>
+						</did>
+						<!-- Kommentare beziehen sich jeweils auf das unmittelbar folgende Element und dessen Attribute und Kindelemente. -->
+						<c level="file" id="WGM-1-1-1-1">
+							<did>
+								<!-- Feld 52 und 53 -->
+								<unitid>StAL EL 350 I Bü 0</unitid>
+								<!-- Feld 57 -->
+								<unitid type="AZ">ES 00000</unitid>
+								<!-- Feld 58 -->
+								<unitid type="BZK">ES 00000</unitid>
+								<!-- Feld 59 -->
+								<unitid type="Vorsignatur">Entsch. A. Stuttgart EA 1</unitid>
+								<!-- Der im Portal anzuzeigende Titel wird beim Ingest ins Portal gebildet -->
+								<unittitle>Smith, Gertrud, geb. Müller, 1910.01.01</unittitle>
+								<!-- Feld 54. Das Attribut @label ist optional, durch den Wert @label="pre" kann eine Vorprovenienz gekennzeichnet werden, durch den Wert @label="Autor" kann eine Urheberschaft (zum Beispiel für audiovisuelle Medien) angegeben werden, die in der DDB hevorgehoben dargestellt wird. -->
+								<origination label="Provenienz">
+									<name source="GND" authfilenumber="4737916-9 ">Entschädigungsamt
+										Stuttgart</name>
+								</origination>
+								<origination label="pre">Entschädigungsamt München</origination>
+								<!-- Feld 55 -->
+								<unitdate normal="1953-01-01/1975-12-31">1953-1975</unitdate>
+								<!-- Feld 56 -->
+								<unitdate label="abweichende Laufzeit"
+									normal="1990-01-01/1992-12-31">1990-1992</unitdate>
+								<!-- Feld 69 -->
+								<abstract type="enthält">Ausführlicher Lebenslauf</abstract>
+								<!-- Feld 70 -->
+								<abstract type="darin">Foto</abstract>
+								<physdesc>Unterlagen mit beschädigtem Aktendeckel</physdesc>
+								<physdesc>
+									<!-- Zulässige Werte für @normal: "Sachakte", "Einzelfallakte Entschädigung", "Einzelfallakte Rückerstattung". Liste muss laufend ergänzt werden! -->
+									<genreform normal="Einzelfallakte Entschädigung">Einzelfallakte
+										nach BEG</genreform>
+									<dimensions>Din A4</dimensions>
+									<extent>2cm</extent>
+								</physdesc>
+								<materialspec>Papier</materialspec>
+								<langmaterial>
+									<language langcode="ger" scriptcode="Latn">Deutsch</language>
+								</langmaterial>
+								<!-- Feld 71 -->
+								<note>
+									<p>Digitalisiert</p>
+								</note>
+							</did>
+							<odd>
+								<head>Übernahme</head>
+								<p>Mit Jahrgang 1990 ans Archiv übergeben.</p>
+							</odd>
+							<otherfindaid>
+								<extref xlink:role="url_archivalunit"
+									xlink:href="http://www.landesarchiv-bw.de/plink/?f=2-2292034"
+									>Titelaufnahme im Angebot des Archivs</extref>
+							</otherfindaid>
+							<!-- Feld 50 -->
+							<relatedmaterial type="andere Verfahren">
+								<p>Rückerstattungsverfahren unter StAL EL 350 I Bü 000</p>
+							</relatedmaterial>
+							<!-- Feld 60 -->
+							<relatedmaterial type="andere Archivalien">
+								<p>Sachakten im Bestand StAL EL 350 II</p>
+							</relatedmaterial>
+							<!-- Feld 62 und 63. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<accessrestrict>
+								<p>LArchG</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">31.12.2010</date>
+										<event>Schutzfrist Personen</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<!-- Feld 64 und 65. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<accessrestrict>
+								<p>LArchG</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2030-12-31">31.12.2022</date>
+										<event>Schutzfrist</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<!-- Feld 66 und 67. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<accessrestrict>
+								<p>LArchG</p>
+								<chronlist>
+									<chronitem>
+										<date normal="2010-12-31">31.12.2010</date>
+										<event>Sperrfrist</event>
+									</chronitem>
+								</chronlist>
+							</accessrestrict>
+							<!-- Feld 68 -->
+							<accessrestrict>
+								<p>Akteneinsicht / Freigabe durch Hinterbliebene vor Ablauf der
+									Schutzfrist möglich.</p>
+							</accessrestrict>
+							<userestrict>
+								<p>Urheber eines enthaltenen Fotos nicht ermittelbar.</p>
+							</userestrict>
+							<userestrict type="ead">
+								<p><extref
+										xlink:href="http://creativecommons.org/publicdomain/zero/1.0/"
+										>CC0 1.0 Universal (CC0 1.0) Public Domain
+										Dedication</extref></p>
+							</userestrict>
+							<userestrict type="dao">
+								<p><extref
+										xlink:href="http://rightsstatements.org/vocab/InC-OW-EU/1.0/ "
+										>Urheberrechtsschutz - Verwaistes Werk EU
+										(InC-OW-EU)</extref></p>
+							</userestrict>
+							<index>
+								<!-- Feld 51 -->
+								<indexentry>
+									<corpname role="andere zuständige Behörde"
+										authfilenumber="4015576-6 " source="GND">Landkreis
+										Esslingen</corpname>
+								</indexentry>
+								<!-- Feld 61 -->
+								<indexentry>
+									<persname role="andere Person oder Institution"
+										authfilenumber="141000279" source="GND">Abraham
+										Schweizer</persname>
+								</indexentry>
+								<!-- Feld 61 -->
+								<indexentry>
+									<corpname role="andere Person oder Institution"
+										authfilenumber="1280189126" source="GND">Stadtverwaltung
+										Esslingen</corpname>
+								</indexentry>
+								<!-- Feld 47 und 48. Zulässige Werte für @normal: "Schaden an Leben", "Schaden an Freiheit", "Schaden an Körper und Gesundheit", "Schaden an Eigentum und Vermögen", "Schaden im beruflichen und wirtschaftlichen Fortkommen", "Versicherungsschäden", "Soforthilfe für Rückwanderer" -->
+								<indexentry>
+									<name role="Schadensarten" normal="Schaden an Eigentum und
+										Vermögen" authfilenumber="4048529-8" source="GND">1
+										Kunstwerk entwendet</name>
+								</indexentry>
+								<indexentry>
+									<name role="Schadensarten" normal="Schaden an Freiheit"
+										authfilenumber="4327862-0" source="GND">nähere Angaben siehe
+										"Deportation, Inhaftierung, Anstaltsunterbringung"</name>
+								</indexentry>
+								<!-- Feld 49. Zulässige Werte für @normal: "ja", "nein" -->
+								<indexentry>
+									<name role="Provenienzforschung" normal="ja"/>
+								</indexentry>
+								<indexentry>
+									<persname role="Indxbegriff Person" authfilenumber="11646545X"
+										source="GND">Benjamin Ferencz</persname>
+								</indexentry>
+								<indexentry>
+									<corpname role="Indexbegriff Körperschaft"
+										authfilenumber="814310-9" source="GND">United Restitution
+										Organisation</corpname>
+								</indexentry>
+								<indexentry>
+									<geogname role="Indexbegriff Ort" authfilenumber="4016707-0"
+										source="GND">Fellbach (WN)</geogname>
+								</indexentry>
+							</index>
+							<controlaccess>
+								<!-- Für jede Person ist ein eigenes controllaccess-Element anzulegen -->
+								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des Namens-Elements ist nicht ausreichend. -->
+								<!-- Die @role und @type Attribute spiegeln die Erschließungsfelder des Metadatenkatalogs wieder. Es sind daher zwingend die hier angegebenen Werte für die einzelnen Felder zu nutzen. Werte aus den im Metadatenkatalog für einzelne Felder festgehaltenen beziehungsweise referenzierten Wertelisten sowie im Metadatenkatalog angegebene "Checkbox"-Werte werden über das Attribut @normal wiedergegeben. -->
+								<list>
+									<!-- Feld 22 und 34. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
+									<item>
+										<name role="WGM-ID" authfilenumber="118540238" source="GND"
+											>wgm_798bec7a-779b-4fda-a860-87e0c1209e34</name>
+									</item>
+									<!-- Zulässige Werte für @normal: "verfolgt", "antragstellend" -->
+									<item>
+										<name role="Rolle" normal="verfolgt"/>
+									</item>
+									<!-- Feld 1 und 23 -->
+									<item>
+										<persname role="Nachname">Smith</persname>
+									</item>
+									<!-- Feld 2 und 24 -->
+									<item>
+										<persname role="Vorname">Gertrud</persname>
+									</item>
+									<!-- Feld 3 und 25 -->
+									<item>
+										<persname role="Geburtsname">Müller</persname>
+									</item>
+									<!-- Feld 4 und 26. Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
+									<item>
+										<name role="akademischer Titel" normal="Dr."/>
+									</item>
+									<!-- Feld 5 und 27 -->
+									<item>
+										<persname role="weitere Nachnamen">Muller</persname>
+									</item>
+									<!-- Feld 6 und 28 -->
+									<item>
+										<persname role="weitere Vornamen">Gertrudis,
+											Gertruda</persname>
+									</item>
+									<!-- Feld 7 -->
+									<item>
+										<geogname role="Geburtsort" authfilenumber="4015575-4"
+											source="GND">Esslingen (ES)</geogname>
+									</item>
+									<!-- Feld 8 und 9. Ein vermuteter Sterbeort entsprechend dem Metadatenkatalog kann über das Element "note" wie hier angegeben gekennzeichnet werden. Ist der Sterbeort nicht vermutet, ist das Element "note" wegzulassen. -->
+									<item>
+										<geogname role="Sterbeort vor 1947"
+											authfilenumber="4079048-4" source="GND">Warschau,
+											PL</geogname>
+										<note label="Sterbeort vor 1947">
+											<p>vermutet</p>
+										</note>
+									</item>
+									<!-- Feld 10 -->
+									<item>
+										<geogname role="letzter Wohnort" authfilenumber="4058282-6"
+											source="GND">Stuttgart (S)</geogname>
+									</item>
+									<!-- Feld 11 -->
+									<item>
+										<geogname role="Wohnort bei Antragstellung"
+											authfilenumber="4039497-9" source="GND">Minneapolis,
+											US</geogname>
+									</item>
+									<!-- Feld 12 und 13 sowie 29. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<date type="Geburtsdatum" certainty="uncertain"
+											normal="1910-01-01">01.01.1910</date>
+									</item>
+									<!-- Feld 14 und 15 sowie 30. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<date type="Sterbedatum" certainty="uncertain"
+											normal="1992-12-31">31.12.1992</date>
+									</item>
+									<!-- Feld 16. Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt". -->
+									<item>
+										<name role="Geschlecht" normal="weiblich"/>
+									</item>
+									<!-- Feld 17. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden.-->
+									<item>
+										<geogname role="Staatsangehörigkeit vor der Verfolgung"
+											normal="Deutsches Reich"/>
+									</item>
+									<!-- Feld 18. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
+									<item>
+										<geogname role="Staatsangehörigkeit bei Antragstellung"
+											normal="USA"/>
+									</item>
+									<!-- Feld 19 -->
+									<item>
+										<name role="erlernter Beruf" authfilenumber="4035097-6"
+											source="GND">Lehrerin</name>
+									</item>
+									<!-- Feld 20 -->
+									<item>
+										<name role="Beruf bei Antragstellung"
+											authfilenumber="4160219-5" source="GND"
+											>Hochschullehrerin</name>
+									</item>
+									<!-- Feld 21 und 33 -->
+									<item>
+										<note>
+											<p>Bekannte Zeitzeugin</p>
+										</note>
+									</item>
+									<!-- Feld 32 -->
+									<!-- neu Anpassung: Werte für Beziehungsbezeichnung wird im @normal markiert-->
+									<!-- Zulässige Werte für @normal: Elternteil, Kind, Geschwisterteil, Ehepartner/in, Enkelkind, Sonstige Verwandte -->
+									<item>
+										<name role="Beziehung zur verfolgten Person"
+											normal="Geschwisterteil"/>
+									</item>
+									<!-- Feld 35. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
+									<item>
+										<name role="Verfolgungsgrund"
+											normal="politische Überzeugung"/>
+									</item>
+									<item>
+										<name role="Verfolgungsgrund" normal="Rasse"/>
+									</item>
+									<!-- Feld 36 bis 40. Zulässige Werte für @normal: "politische Überzeugung", "Glaube und Weltanschauung", "Rasse", "weitere Verfolgtengruppen", "weitere Verfolgungsmerkmale. Der Elementinhalt enthält die gemäß Metadatenkatalog als Freitext eingegebenen oder aus der Auswahlliste gewählten näher spezifizierenden Angaben." -->
+									<item>
+										<name role="Verfolgungsgrund Spezifizierung"
+											normal="politische Überzeugung">Sozialdemokratische
+											Partei Deutschlands (SPD)</name>
+									</item>
+									<item>
+										<name role="Verfolgungsgrund Spezifizierung"
+											normal="politische Überzeugung">Gewerkschaft</name>
+									</item>
+									<item>
+										<name role="Verfolgungsgrund Spezifizierung" normal="Rasse"
+											>Jude/Jüdin</name>
+									</item>
+									<!-- Feld 41 -->
+									<item>
+										<name role="Verfolgungsgegenstand">Landesverrat (§§ 88-93a
+											RStGB)</name>
+									</item>
+									<!-- Feld 42 -->
+									<item>
+										<name
+											role="Deportation, Inhaftierung, Anstaltsunterbringung"
+											>Haft in Stuttgart, Ghetto Wahrschau</name>
+									</item>
+									<!-- Feld 43 -->
+									<item>
+										<name role="Illegalität" normal="ja">Nürnberg, Köln</name>
+									</item>
+									<!-- Feld 44. Zulässige Werte für @normal: "ja", "nein". -->
+									<item>
+										<name role="Zwangsarbeit" normal="ja">Rüstungsbetrieb
+											Nürnberg</name>
+									</item>
+									<!-- Feld 45. Zulässige Werte für @normal: "ja", "nein". -->
+									<item>
+										<name role="Zwangssterilisierung" normal="ja"/>
+									</item>
+									<!-- Feld 46. Zulässige Werte für @normal: "ja", "nein". -->
+									<item>
+										<name role="Emigration" normal="ja">USA</name>
+									</item>
+								</list>
+							</controlaccess>
+							<controlaccess>
+								<!-- Für jede Person ist ein eigenes controllaccess-Element anzulegen -->
+								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des Namens-Elements ist nicht ausreichend. -->
+								<list>
+									<!-- Feld 22 und 34. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
+									<item>
+										<name role="WGM-ID" authfilenumber="118607626" source="GND"
+											>wgm_fdd5e9c8-c5fc-45f1-a0f0-441f62189fae</name>
+									</item>
+									<!-- Zulässige Werte für @normal: "Verfolgter", "Antragsteller" -->
+									<item>
+										<name role="Rolle" normal="antragstellend"/>
+									</item>
+									<!-- Feld 31 -->
+									<!-- <item>
+										<corpname role="juristische Person"
+											authfilenumber="GND-Nummer" source="GND">Name der
+											Institution</corpname>
+									</item> -->
+									<!-- Feld 1 und 23 -->
+									<item>
+										<persname role="Nachname">Williams</persname>
+									</item>
+									<!-- Feld 2 und 24 -->
+									<item>
+										<persname role="Vorname">Karen</persname>
+									</item>
+									<!-- Feld 3 und 25 -->
+									<item>
+										<persname role="Geburtsname">Smith</persname>
+									</item>
+									<!-- Feld 4 und 26. Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
+									<item>
+										<name role="akademischer Titel" normal="Dr."/>
+									</item>
+									<!-- Feld 5 und 27 -->
+									<item>
+										<persname role="weitere Nachnamen">Jones</persname>
+									</item>
+									<!-- Feld 6 und 28 -->
+									<item>
+										<persname role="weitere Vornamen">Karin</persname>
+									</item>
+									<!-- Feld 7 -->
+									<item>
+										<geogname role="Geburtsort" authfilenumber="4015575-4"
+											source="GND">Esslingen (ES)</geogname>
+									</item>
+									<!-- Feld 11 -->
+									<item>
+										<geogname role="Wohnort bei Antragstellung"
+											authfilenumber="4118227-3" source="GND">Saint Paul,
+											US</geogname>
+									</item>
+									<!-- Feld 12 und 13 sowie 29. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<date type="Geburtsdatum" certainty="uncertain"
+											normal="1942-01-01">01.01.1942</date>
+									</item>
+									<!-- Feld 14 und 15 sowie 30. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<item>
+										<date type="Sterbedatum" certainty="uncertain"
+											normal="1982-12-31">31.12.1982</date>
+									</item>
+									<!-- Feld 16. Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt". -->
+									<item>
+										<name role="Geschlecht" normal="weiblich"/>
+									</item>
+									<!-- Feld 18. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
+									<item>
+										<geogname role="Staatsangehörigkeit bei Antragstellung"
+											normal="USA"/>
+									</item>
+									<!-- Feld 19 -->
+									<item>
+										<name role="erlernter Beruf" authfilenumber="4140665-5"
+											source="GND">Ärztin</name>
+									</item>
+									<!-- Feld 20 -->
+									<item>
+										<name role="Beruf bei Antragstellung"
+											authfilenumber="4405761-1" source="GND"
+											>Apothekerin</name>
+									</item>
+									<!-- Feld 21 und 33 -->
+									<item>
+										<note>
+											<p>Gemeinsamer Antrag mit der Vereinigung der Verfolgten
+												des Naziregimes - Bund der Antifaschisten.
+												Kreisvereinigung Esslingen</p>
+										</note>
+									</item>
+									<!-- Feld 32 -->
+									<item>
+										<name role="Beziehung zur verfolgten Person">Kind</name>
+									</item>
+									<!-- Feld 35. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
+								</list>
+							</controlaccess>
+							<controlaccess>
+								<!-- Für jede Person ist ein eigenes controllaccess-Element anzulegen -->
+								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des Namens-Elements ist nicht ausreichend. -->
+								<list>
+									<!-- Feld 22 und 34. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
+									<item>
+										<name role="WGM-ID" authfilenumber="094271-0" source="GND"
+											>wgm_f4235ad2-f211-4444-92d3-804e0684b280</name>
+									</item>
+									<!-- Zulässige Werte für @normal: "Verfolgter", "Antragsteller" -->
+									<item>
+										<name role="Rolle" normal="antragstellend"/>
+									</item>
+									<!-- Feld 31 -->
+									<item>
+										<corpname role="juristische Person"
+											authfilenumber="094271-0" source="GND">Vereinigung der
+											Verfolgten des Naziregimes - Bund der Antifaschisten.
+											Kreisvereinigung Esslingen</corpname>
+									</item>
+									<!-- neues Feld für Sitz der Organisation -->
+									<item>
+										<geogname role="Sitz" authfilenumber="4015575-4"
+											source="GND">Esslingen (ES)</geogname>
+									</item>
+									<item>
+										<note>
+											<p>Gemeinsamer Antrag mit der Tochter Karen Smith</p>
+										</note>
+									</item>
+
+								</list>
+							</controlaccess>
+							<daogrp>
+								<daodesc>
+									<list>
+										<item>
+											<name>Beispildigitalisat</name>
+											<title>Beschreibung des Beispieldigitalisats</title>
+											<genreform>TEXT</genreform>
+										</item>
+									</list>
+								</daodesc>
+								<daoloc xlink:role="image_full"
+									xlink:href="https://cms.archivportal-d.de//sites/default/files/media/document/2022-11/1953-09-18_Bundeserg%C3%A4nzungsgesetz%20%28BErgG%29_BGBl.%201953%20I%2C%201387-1408_OG.pdf"/>
+								<daoloc xlink:role="externer_viewer"
+									xlink:href="http://www.landesarchiv-bw.de/plink/?f=2-5939165-2"/>
+								<daoloc xlink:role="METS"
+									xlink:href="https://www.digitale-bibliothek-mv.de/viewer/sourcefile?id=PPNUAG_0_1_R_2254"
+								/>
+							</daogrp>
+
+						</c>
+					</c>
+				</c>
+			</c>
+		</dsc>
+	</archdesc>
+</ead>
