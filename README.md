@@ -28,6 +28,7 @@ Weitere Informationen zum EAD(DDB)-WGM-Anwendungsprofil finden sich in der [Doku
 Über Verbesserungsvorschläge bzw. Fehlerberichte freuen wir uns. Diese können Sie unter [Issues](https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead/issues) anlegen.
 
 ## Changelog
+- 2024-11-08: XML-Schema für EAD(DDB)-WGM: Vokabular für Schadensarten und Staatsangehörigkeit um fehlenden Wert ergänzt.
 - 2024-11-04: Beispieldatei und XML-Schema für EAD(DDB)-WGM Version 1.2 veröffentlicht.
 - 2024-01-16: Beispieldatei für EAD(DDB)-WGM - fehlerbereinigte und erweiterte Version 1.1 veröffentlicht. Die bisherige Version 1.0 wird nicht mehr gepflegt.
   - Erklärende Kommentare mit Verweis auf Feldnummern des Metadatenkatalogs ergänzt

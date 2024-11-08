@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
-	Findbuch EAD(DDB)-WGM 1.1 (XSD 1.1)
+	Findbuch EAD(DDB)-WGM 1.2 (XSD 1.1), Version 1.1
 	Autor: Martin Reisacher, Matthias Forster, Oliver Götze, Nils Meyer
-	Version: Findbuch EAD(DDB)-WGM 1.1
-	Datum: 20240910
+	Version: Findbuch EAD(DDB)-WGM 1.2, Schema-Version 1.1, XSD 1.1
+	Datum: 20241107
 	based on: http://www.loc.gov/ead/ead.xsd
 -->
 <xs:schema xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -91,6 +91,7 @@
                     <xs:enumeration value="Schaden im beruflichen und wirtschaftlichen Fortkommen"/>
                     <xs:enumeration value="Versicherungsschäden"/>
                     <xs:enumeration value="Soforthilfe für Rückwanderer"/>
+                    <xs:enumeration value="Schaden durch Zahlung von Sonderabgaben, Geldstrafen, Bußen und Kosten"/>
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
@@ -348,6 +349,7 @@
         <xs:attribute name="normal" use="required">
             <xs:simpleType>
                 <xs:restriction base="xs:token">
+                    <xs:enumeration value="staatenlos"/>
                     <xs:enumeration value="Afghanistan"/>
                     <xs:enumeration value="Ägypten"/>
                     <xs:enumeration value="Albanien"/>
