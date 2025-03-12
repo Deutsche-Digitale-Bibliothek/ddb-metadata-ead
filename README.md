@@ -16,10 +16,10 @@ Im Unterordner `ead_ddb/1.2/example` finden sich Beispieldateien, darunter:
 Im Unterordner `ead_ddb/1.2/schema` finden Sie XML-Schema-Dateien zur Validierung von EAD(DDB)-Dateien. Vorzugsweise sollten die Schemata nach der Schema-Definition 1.1 (`..._XSD1.1.xsd`) verwendet werden, da diese eine wesentlich genauere Abprüfung der Validierungsregeln erlauben. Für XML-Parser, die XSD 1.1 nicht unterstützen, werden die Schemata auch in Version 1.0 bereitgestellt.
 
 ### EAD(DDB)-WGM
-Im Unterordner `ead_ddb_wgm/1.2/example` findet sich eine Findbuch-Beispieldatei für das EAD(DDB)-WGM-Anwendungsprofil zur Verwendung im [Themenportal Wiedergutmachung](https://www.archivportal-d.de/themenportale/wiedergutmachung). 
+Im Unterordner `ead_ddb_wgm/1.3/example` findet sich eine Findbuch-Beispieldatei für das EAD(DDB)-WGM-Anwendungsprofil zur Verwendung im [Themenportal Wiedergutmachung](https://www.archivportal-d.de/themenportale/wiedergutmachung). 
 Die Beispieldatei basiert auf der jeweils aktuellen Version von EAD(DDB) 1.2.
 
-Eine XML-Schema-Datei zur Validierung von Findbüchern im EAD(DDB)-WGM-Format finden Sie im Unterordner `ead_ddb_wgm/1.2/schema`. Zur Validierung von Tektonik-Dateien kann das reguläre EAD(DDB)-Schema verwendet werden.
+Eine XML-Schema-Datei zur Validierung von Findbüchern im EAD(DDB)-WGM-Format finden Sie im Unterordner `ead_ddb_wgm/1.3/schema`. Zur Validierung von Tektonik-Dateien kann das reguläre EAD(DDB)-Schema verwendet werden.
 
 Weitere Informationen zum EAD(DDB)-WGM-Anwendungsprofil finden sich in der [Dokumentation](https://wiki.deutsche-digitale-bibliothek.de/pages/viewpage.action?pageId=126518213).
 
@@ -28,6 +28,7 @@ Weitere Informationen zum EAD(DDB)-WGM-Anwendungsprofil finden sich in der [Doku
 Über Verbesserungsvorschläge bzw. Fehlerberichte freuen wir uns. Diese können Sie unter [Issues](https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead/issues) anlegen.
 
 ## Changelog
+- 2025-03-12: Beispieldatei und XML-Schema für EAD(DDB)-WGM Version 1.3 veröffentlicht.
 - 2024-11-08: XML-Schema für EAD(DDB)-WGM: Vokabular für Schadensarten und Staatsangehörigkeit um fehlenden Wert ergänzt.
 - 2024-11-04: Beispieldatei und XML-Schema für EAD(DDB)-WGM Version 1.2 veröffentlicht.
 - 2024-01-16: Beispieldatei für EAD(DDB)-WGM - fehlerbereinigte und erweiterte Version 1.1 veröffentlicht. Die bisherige Version 1.0 wird nicht mehr gepflegt.
