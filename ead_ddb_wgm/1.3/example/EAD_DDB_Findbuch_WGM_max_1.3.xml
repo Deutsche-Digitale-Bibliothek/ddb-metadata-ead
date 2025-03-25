@@ -2,8 +2,8 @@
 <!--
 	Findbuch EAD(DDB)-WGM 1.3 (Findbuch-Optimalbeispiel)
 	Autoren: Nils Meyer, Oliver Götze
-	Version: Findbuch EAD(DDB)-WGM 1.3
-	Datum: 20250312
+	Version: Findbuch EAD(DDB)-WGM 1.3, Revision 1.1
+	Datum: 20250325
 	Dokumentation: https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead
 -->
 
@@ -76,34 +76,34 @@
 						<!-- Kommentare beziehen sich jeweils auf das unmittelbar folgende Element und dessen Attribute und Kindelemente. -->
 						<c level="file" id="WGM-1-1-1-1">
 							<did>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 52 und 53 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Felder Archivkürzel und Bestellsignatur -->
 								<unitid>StAL EL 350 I Bü 0</unitid>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 57 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Aktenzeichen der Behörde -->
 								<unitid type="AZ">ES 00000</unitid>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 58 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld BZK Nr. -->
 								<unitid type="BZK">ES 00000</unitid>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 59 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Vorsignaturen -->
 								<unitid type="Vorsignatur">Entsch. A. Stuttgart EA 1</unitid>
 								<!-- Der im Portal anzuzeigende Titel wird beim Ingest ins Portal gebildet -->
 								<unittitle>Smith, Gertrud, geb. Müller, 1910.01.01</unittitle>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 54. Das Attribut @label ist optional, durch den Wert @label="pre" kann eine Vorprovenienz gekennzeichnet werden, durch den Wert @label="Autor" kann eine Urheberschaft (zum Beispiel für audiovisuelle Medien) angegeben werden, die in der DDB hevorgehoben dargestellt wird. -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Provenienz. Das Attribut @label ist optional, durch den Wert @label="pre" kann eine Vorprovenienz gekennzeichnet werden, durch den Wert @label="Autor" kann eine Urheberschaft (zum Beispiel für audiovisuelle Medien) angegeben werden, die in der DDB hevorgehoben dargestellt wird. -->
 								<origination label="Provenienz">
 									<name source="GND" authfilenumber="4737916-9 ">Entschädigungsamt
 										Stuttgart</name>
 								</origination>
 								<origination label="pre">Entschädigungsamt München</origination>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 55 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Laufzeit der Akte -->
 								<unitdate normal="1953-01-01/1975-12-31">1953-1975</unitdate>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 56 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Laufzeit der Akte, falls abweichend -->
 								<unitdate label="abweichende Laufzeit"
 									normal="1990-01-01/1992-12-31">1990-1992</unitdate>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 69 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Enhält -->
 								<abstract type="enthält">Ausführlicher Lebenslauf</abstract>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 70 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Darin -->
 								<abstract type="darin">Foto</abstract>
 								<physdesc>Unterlagen mit beschädigtem Aktendeckel</physdesc>
 								<physdesc>
-									<!-- Zulässige Werte für @normal: "Sachakte", "Einzelfallakte Entschädigung", "Einzelfallakte Rückerstattung". Liste muss laufend ergänzt werden! -->
+									<!-- Zulässige Werte für @normal: "Bundeszentralkartei", "Entschädigungsakte", "Rückerstattungsakte", "Sonstige personenbezogene Akte". Liste muss laufend ergänzt werden! -->
 									<genreform normal="Entschädigungsakte">Entschädigungsakte</genreform>
 									<dimensions>Din A4</dimensions>
 									<extent>2cm</extent>
@@ -112,7 +112,7 @@
 								<langmaterial>
 									<language langcode="ger" scriptcode="Latn">Deutsch</language>
 								</langmaterial>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 71 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Archivinterne Bemerkungen -->
 								<note>
 									<p>Digitalisiert</p>
 								</note>
@@ -126,15 +126,15 @@
 									xlink:href="http://www.landesarchiv-bw.de/plink/?f=2-2292034"
 									>Titelaufnahme im Angebot des Archivs</extref>
 							</otherfindaid>
-							<!-- Metadatenkatalog Entschädigungsakten: Feld 50 -->
+							<!-- Metadatenkatalog Entschädigungsakten: Feld Verweis auf andere Verfahren / Rückerstattung-->
 							<relatedmaterial type="andere Verfahren">
 								<p>Rückerstattungsverfahren unter StAL EL 350 I Bü 000</p>
 							</relatedmaterial>
-							<!-- Metadatenkatalog Entschädigungsakten: Feld 60 -->
+							<!-- Metadatenkatalog Entschädigungsakten: Feld Querverweis auf andere Archivalien -->
 							<relatedmaterial type="andere Archivalien">
 								<p>Sachakten im Bestand StAL EL 350 II</p>
 							</relatedmaterial>
-							<!-- Metadatenkatalog Entschädigungsakten: Feld 62 und 63. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<!-- Metadatenkatalog Entschädigungsakten: Felder Schutzfristen Rechtsgrundlage Personen und Schutzfrist Personen (Enddatum). Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
 							<accessrestrict>
 								<p>LArchG</p>
 								<chronlist>
@@ -144,7 +144,7 @@
 									</chronitem>
 								</chronlist>
 							</accessrestrict>
-							<!-- Metadatenkatalog Entschädigungsakten: Feld 64 und 65. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<!-- Metadatenkatalog Entschädigungsakten: Felder Schutzfrist Rechtsgrundlage Sonstige und Schutzfrist Sonstige (Enddatum). Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
 							<accessrestrict>
 								<p>LArchG</p>
 								<chronlist>
@@ -154,7 +154,7 @@
 									</chronitem>
 								</chronlist>
 							</accessrestrict>
-							<!-- Metadatenkatalog Entschädigungsakten: Feld 66 und 67. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
+							<!-- Metadatenkatalog Entschädigungsakten: Felder Sperrfrist Rechtsgrundlage und Sperrfrist (Enddatum).. Der angegebene Wert in <event> ist zwingend wie hier dargestellt wiederzugeben. -->
 							<accessrestrict>
 								<!-- Hier kann optional ein head-Element mit einer Überschrift eingefügt werden -->
 								<p>LArchG</p>
@@ -165,7 +165,7 @@
 									</chronitem>
 								</chronlist>
 							</accessrestrict>
-							<!-- Metadatenkatalog Entschädigungsakten: Feld 68 -->
+							<!-- Metadatenkatalog Entschädigungsakten: altes Feld 68 (nur Bayern) -->
 							<accessrestrict>
 								<!-- Hier kann optional ein head-Element mit einer Überschrift eingefügt werden -->
 								<p>Akteneinsicht / Freigabe durch Hinterbliebene vor Ablauf der
@@ -199,7 +199,7 @@
 									<geogname authfilenumber="4016707-0"
 										source="GND">Fellbach (WN)</geogname>
 								</indexentry>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 51 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Verweis auf andere zuständige Behörde -->
 								<indexentry>
 									<corpname role="andere zuständige Behörde"
 										authfilenumber="4015576-6" source="GND">Landkreis
@@ -209,19 +209,19 @@
 									<corpname role="andere zuständige Behörde"
 										authfilenumber="4005728-8" source="GND">Berlin</corpname>
 								</indexentry>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 61 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Querverweis auf andere Personen oder Institutionen -->
 								<indexentry>
 									<persname role="andere Person oder Institution"
 										authfilenumber="141000279" source="GND">Abraham
 										Schweizer</persname>
 								</indexentry>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 61 -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Querverweis auf andere Personen oder Institutionen -->
 								<indexentry>
 									<corpname role="andere Person oder Institution"
 										authfilenumber="1280189126" source="GND">Stadtverwaltung
 										Esslingen</corpname>
 								</indexentry>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 47 und 48. Zulässige Werte für @normal: "Schaden an Leben", "Schaden an Freiheit", "Schaden an Körper und Gesundheit", "Schaden an Eigentum und Vermögen", "Schaden im beruflichen und wirtschaftlichen Fortkommen", "Versicherungsschäden", "Soforthilfe für Rückwanderer" -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Entschädigungsansprüche / Schadensarten. Zulässige Werte für @normal: "Schaden an Leben", "Schaden an Freiheit", "Schaden an Körper und Gesundheit", "Schaden an Eigentum und Vermögen", "Schaden im beruflichen und wirtschaftlichen Fortkommen", "Versicherungsschäden", "Soforthilfe für Rückwanderer", "Schaden durch Zahlung von Sonderabgaben, Geldstrafen, Bußen und Kosten" -->
 								<indexentry>
 									<name role="Schadensarten" normal="Schaden an Eigentum und
 										Vermögen" authfilenumber="4048529-8" source="GND"/>
@@ -275,7 +275,7 @@
 								<indexentry>
 									<corpname role="Antragsgegner" authfilenumber="40335-0" source="GND">Deutsche Reichspost</corpname>
 								</indexentry>
-								<!-- Metadatenkatalog Entschädigungsakten: Feld 49. Zulässige Werte für @normal: "ja", "nein" -->
+								<!-- Metadatenkatalog Entschädigungsakten: Feld Relevanz für Provenienzforschung. Zulässige Werte für @normal: "ja", "nein" -->
 								<indexentry>
 									<name role="Provenienzforschung" normal="ja"/>
 								</indexentry>
@@ -284,23 +284,23 @@
 									<corpname role="BZK zuständiges Archiv" authfilenumber="10107080-9" source="GND">Landesarchiv Baden-Württemberg</corpname>
 								</indexentry>
 							</index>
-							<!-- NEU! Metadatenkatalog Entschädigungsakten: "Weitere Angaben zu Schadensarten" wurden aus dem Elementinhalt von /index/indexentry/name[@role="Schadensarten"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
+							<!-- NEU! Metadatenkatalog Entschädigungsakten: Feld Weitere Angaben zu Schadensarten oder zum Verfahren. Wurden aus dem Elementinhalt von /index/indexentry/name[@role="Schadensarten"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
 							<odd type="Angaben Schadensarten">
 								<p>Verschiedene Stationen der Lagerhaft, Entwendung eines Kunstwerks</p>
 							</odd>
-							<!-- NEU! Metadatenkatalog Rückerstattungsakten: "Weitere Angaben zu entzogenen Geldwerten" wurden aus dem Elementinhalt von /index/indexentry/name[@role="Geldwerte"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
+							<!-- NEU! Metadatenkatalog Rückerstattungsakten: Feld Weitere Angaben zu entzogenen Geldwerten. Wurde aus dem Elementinhalt von /index/indexentry/name[@role="Geldwerte"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
 							<odd type="Angaben Geldwerte">
 								<p>400 Aktienanteile an einem Industrieunternehmen sowie ein Sparbuch</p>
 							</odd>
-							<!-- NEU! Metadatenkatalog Rückerstattungsakten: "Weitere Angaben zu beweglichem Vermögen" wurden aus dem Elementinhalt von /index/indexentry/name[@role="bewegliches Verögen"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
+							<!-- NEU! Metadatenkatalog Rückerstattungsakten: Feld Weitere Angaben zu beweglichem Vermögen. Wurde aus dem Elementinhalt von /index/indexentry/name[@role="bewegliches Verögen"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
 							<odd type="Angaben bewegliches Vermögen">
 								<p>2 Bilder</p>
 							</odd>
-							<!-- NEU! Metadatenkatalog Rückerstattungsakten: "Weitere Angaben zu unbeweglichem Vermögen" wurden aus dem Elementinhalt von /index/indexentry/name[@role="unbewegliches Verögen"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
+							<!-- NEU! Metadatenkatalog Rückerstattungsakten: Feld Weitere Angaben zu unbeweglichem Vermögen. Wurde aus dem Elementinhalt von /index/indexentry/name[@role="unbewegliches Verögen"] in ein eigenes Element ausgelagert. /name umfasst nur noch die normierte Angabe aus der Werteliste im Metadatenkatalog und kann wiederholt werden. Ergänzungen werden im folgenden /odd zusammengefasst. -->
 							<odd type="Angaben unbewegliches Vermögen">
 								<p>Die genannten Immobilien wurden im Krieg zerstört. Das Betriebsgebäude in Oberesslingen umfasste auch Nebengebäude. Grundbuch-Eintrag Nr. 54231</p>
 							</odd>
-							<!-- NEU! Metadatenkatalog Rückerstattungsakten: Zeitpunkt der Entziehung -->
+							<!-- NEU! Metadatenkatalog Rückerstattungsakten: Feld Zeitpunkt der Entziehung -->
 							<odd type="Zeitpunkt der Entziehung">
 								<chronlist>
 									<chronitem>
@@ -323,7 +323,7 @@
 								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des Namens-Elements ist nicht ausreichend. -->
 								<!-- Die @role und @type Attribute spiegeln die Erschließungsfelder des Metadatenkatalogs wieder. Es sind daher zwingend die hier angegebenen Werte für die einzelnen Felder zu nutzen. Werte aus den im Metadatenkatalog für einzelne Felder festgehaltenen beziehungsweise referenzierten Wertelisten sowie im Metadatenkatalog angegebene "Checkbox"-Werte werden über das Attribut @normal wiedergegeben. -->
 								<list>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 22 und 34. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Felder WGM-ID. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
 									<item>
 										<name role="WGM-ID" authfilenumber="118540238" source="GND"
 											>wgm_798bec7a-779b-4fda-a860-87e0c1209e34</name>
@@ -337,37 +337,37 @@
 									<item>
 										<persname role="vollständiger Name">Dr. Gertrud Smith, geb. Müller</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 1 und 23 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Nachname -->
 									<item>
 										<persname role="Nachname">Smith</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 2 und 24 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Vorname -->
 									<item>
 										<persname role="Vorname">Gertrud</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 3 und 25 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Geburtsname -->
 									<item>
 										<persname role="Geburtsname">Müller</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 4 und 26. Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Akademischer Titel. Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
 									<item>
 										<name role="akademischer Titel" normal="Dr."/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 5 und 27 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Weitere Nachnamen -->
 									<item>
 										<persname role="weitere Nachnamen">Muller, von; von Müller; Mueller, Miller, Miller, van, Miller, von, deMuller</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 6 und 28 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Weitere Vornamen -->
 									<item>
 										<persname role="weitere Vornamen">Gertrudis,
 											Gertruda</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 7 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Geburtsort -->
 									<item>
 										<geogname role="Geburtsort" authfilenumber="2928751"
 											source="GEO">Esslingen (ES)</geogname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 8 und 9. Ein vermuteter Sterbeort entsprechend dem Metadatenkatalog kann über das Element "note" wie hier angegeben gekennzeichnet werden. Ist der Sterbeort nicht vermutet, ist das Element "note" wegzulassen. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Felder Sterbeort vor Mai 1945 und Sterbeort vor Mai 1945 (vermutet). Ein vermuteter Sterbeort entsprechend dem Metadatenkatalog kann über das Element "note" wie hier angegeben gekennzeichnet werden. Ist der Sterbeort nicht vermutet, ist das Element "note" wegzulassen. -->
 									<item>
 										<geogname role="Sterbeort vor 1947"
 											authfilenumber="756135" source="GEO">Warschau,
@@ -376,60 +376,60 @@
 											<p>vermutet</p>
 										</note>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 10 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Letzter freiwillig gewählter Wohnort vor Mai 1945 -->
 									<item>
 										<geogname role="letzter Wohnort" authfilenumber="2825297"
 											source="GEO">Stuttgart (S)</geogname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 11 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Wohnort bei der Antragstellung -->
 									<item>
 										<geogname role="Wohnort bei Antragstellung"
 											authfilenumber="5037649" source="GEO">Minneapolis,
 											US</geogname>
 									</item>
-									<!-- NEU! Metadatenkatalog Rückerstattungsakten: -->
+									<!-- NEU! Metadatenkatalog Rückerstattungsakten: Wohnort zum Zeitpunkt der Entziehung -->
 									<item>
 										<geogname role="Wohnort bei Entziehung"
 											authfilenumber="2825297" source="GEO">Stuttgart (S), OT Feuerbach</geogname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 12 und 13 sowie 29. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Felder Geburtsdatum und Geburtsdatum (vermutet). Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
 									<item>
 										<date type="Geburtsdatum" certainty="uncertain"
 											normal="1910-01-01">01.01.1910</date>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 14 und 15 sowie 30. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Felder Sterbedatum und Sterbedatum (vermutet). Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
 									<item>
 										<date type="Sterbedatum" certainty="uncertain"
 											normal="1992-12-31">31.12.1992</date>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 16. Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt". -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Geschlecht. Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt". -->
 									<item>
 										<name role="Geschlecht" normal="weiblich"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 17. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden.-->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Staatsangehörigkeit vor der Verfolgung. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden.-->
 									<!-- NEU! Zugleich Feld "Staatsangehörigkeit zum Zeitpunkt der Verfolgung" des Metadatenkatalogs für Rückerstattungsakten -->
 									<item>
 										<geogname role="Staatsangehörigkeit vor der Verfolgung"
 											normal="Deutsches Reich"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 18. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Staatsangehörigkeit zum Zeitpunkt der Erstantragstellung. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
 									<item>
 										<geogname role="Staatsangehörigkeit bei Antragstellung"
 											normal="USA"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 19 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Erlernter Beruf -->
 									<item>
 										<name role="erlernter Beruf" authfilenumber="4035097-6"
 											source="GND">Lehrerin</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 20 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Berufliche Tätigkeit zum Zeitpunkt der Antragstellung  -->
 									<!-- NEU! Zugleich Feld "Beruf" des Metadatenkatalogs für Rückerstattungsakten -->
 									<item>
 										<name role="Beruf bei Antragstellung"
 											authfilenumber="4160219-5" source="GND"
 											>Hochschullehrerin</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 21 und 33 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Weitere Angaben zur Person -->
 									<item>
 										<note>
 											<p>Bekannte Zeitzeugin</p>
@@ -442,7 +442,7 @@
 										<name role="Beziehung zur antragstellenden Person"
 											normal="Elternteil"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 35. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Verfolgungsgrund. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
 									<item>
 										<name role="Verfolgungsgrund"
 											normal="politische Überzeugung"/>
@@ -450,7 +450,7 @@
 									<item>
 										<name role="Verfolgungsgrund" normal="Rasse"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 36 bis 40. Zulässige Werte für @normal: "politische Überzeugung", "Glaube und Weltanschauung", "Rasse", "weitere Verfolgtengruppen", "weitere Verfolgungsmerkmale". Der Elementinhalt enthält die gemäß Metadatenkatalog als Freitext eingegebenen oder aus der Auswahlliste gewählten näher spezifizierenden Angaben." -->
+									<!-- Metadatenkatalog Entschädigungsakten: Felder Verfolgungsgrund: Politische Überzeugung, Verfolgungsgründe: Glaube und Weltanschauung, Verfolgungsgrund: Rasse und Sonstige Verfolgungsgründe . Zulässige Werte für @normal: "politische Überzeugung", "Glaube und Weltanschauung", "Rasse", "weitere Verfolgtengruppen", "weitere Verfolgungsmerkmale". Der Elementinhalt enthält die gemäß Metadatenkatalog als Freitext eingegebenen oder aus der Auswahlliste gewählten näher spezifizierenden Angaben." -->
 									<item>
 										<name role="Verfolgungsgrund Spezifizierung"
 											normal="politische Überzeugung">Sozialdemokratische
@@ -464,31 +464,31 @@
 										<name role="Verfolgungsgrund Spezifizierung" normal="Rasse"
 											>Jude/Jüdin</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 41 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Delikt nach NS-Justiz -->
 									<item>
 										<name role="Verfolgungsgegenstand">Landesverrat (§§ 88-93a
 											RStGB)</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 42 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Deportation/Inhaftierung/Anstaltsunterbringung -->
 									<item>
 										<name
 											role="Deportation, Inhaftierung, Anstaltsunterbringung"
 											>Haft in Stuttgart, Ghetto Wahrschau</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 43 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Illegalität -->
 									<item>
 										<name role="Illegalität" normal="ja">Nürnberg, Köln</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 44. Zulässige Werte für @normal: "ja", "nein". -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Zwangsarbeit / Zwangsdienst. Zulässige Werte für @normal: "ja", "nein". -->
 									<item>
 										<name role="Zwangsarbeit" normal="ja">Rüstungsbetrieb
 											Nürnberg</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 45. Zulässige Werte für @normal: "ja", "nein". -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Zwangssterilisierung. Zulässige Werte für @normal: "ja", "nein". -->
 									<item>
 										<name role="Zwangssterilisierung" normal="ja"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 46. Zulässige Werte für @normal: "ja", "nein". -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Emigration (vor 8.5.1945) mit Emigrationsziel. Zulässige Werte für @normal: "ja", "nein". -->
 									<item>
 										<name role="Emigration" normal="ja">USA</name>
 									</item>
@@ -498,7 +498,7 @@
 								<!-- Für jede Person ist ein eigenes controllaccess-Element anzulegen -->
 								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des Namens-Elements ist nicht ausreichend. -->
 								<list>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 22 und 34. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld WGM-ID. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
 									<item>
 										<name role="WGM-ID" authfilenumber="118607626" source="GND"
 											>wgm_fdd5e9c8-c5fc-45f1-a0f0-441f62189fae</name>
@@ -517,72 +517,72 @@
 									<item>
 										<persname role="vollständiger Name">Dr. Karen Williams, geb. Smith</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 1 und 23 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Nachname -->
 									<item>
 										<persname role="Nachname">Williams</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 2 und 24 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Vorname -->
 									<item>
 										<persname role="Vorname">Karen</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 3 und 25 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Geburtsname -->
 									<item>
 										<persname role="Geburtsname">Smith</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 4 und 26. Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Akademischer Titel. Zulässige Werte für @normal: "Dr.", "Prof.", "Prof. Dr.", "Dipl." -->
 									<item>
 										<name role="akademischer Titel" normal="Dr."/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 5 und 27 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Weitere Nachnamen -->
 									<item>
 										<persname role="weitere Nachnamen">Jones</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 6 und 28 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Weitere Vornamen -->
 									<item>
 										<persname role="weitere Vornamen">Karin</persname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 7 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Geburtsort -->
 									<item>
 										<geogname role="Geburtsort" authfilenumber="2928751"
 											source="GEO">Esslingen (ES)</geogname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 11 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Wohnort bei der Antragstellung -->
 									<item>
 										<geogname role="Wohnort bei Antragstellung"
 											authfilenumber="5045360" source="GEO">Saint Paul,
 											US</geogname>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 12 und 13 sowie 29. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Felder Geburtsdatum und Geburtsdatum (vermutet). Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
 									<item>
 										<date type="Geburtsdatum" certainty="uncertain"
 											normal="1942-01-01">01.01.1942</date>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 14 und 15 sowie 30. Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Felder Sterbedatum und Sterbedatum (vermutet). Falls das Datum im Sinne des Metadatenkatalogs als "vermutet" gekennzeichnet ist, ist das Attribut @certainty mit dem Attributswert "uncertain" zu verwenden. Falls das Datum nicht vermutet ist, ist das Attribut @certainty wegzulassen. -->
 									<item>
 										<date type="Sterbedatum" certainty="uncertain"
 											normal="1982-12-31">31.12.1982</date>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 16. Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt". -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Geschlecht. Zulässige Werte für @normal: "männlich", "weiblich", "unbekannt". -->
 									<item>
 										<name role="Geschlecht" normal="weiblich"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 18. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Staatsangehörigkeit zum Zeitpunkt der Erstantragstellung. Zulässige Werte für Staatsangehörigkeiten im Attribut @normal können der Liste der Staatsangehörigkeiten in der Dokumentation des Lieferformats EAD(DDB)-WGM entnommen werden. -->
 									<item>
 										<geogname role="Staatsangehörigkeit bei Antragstellung"
 											normal="USA"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 19 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Erlernter Beruf -->
 									<item>
 										<name role="erlernter Beruf" authfilenumber="4140665-5"
 											source="GND">Ärztin</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 20 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Berufliche Tätigkeit zum Zeitpunkt der Antragstellung -->
 									<item>
 										<name role="Beruf bei Antragstellung"
 											authfilenumber="4405761-1" source="GND"
 											>Apothekerin</name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 21 und 33 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Weitere Angaben zur antragstellenden Person -->
 									<item>
 										<note>
 											<p>Gemeinsamer Antrag mit der Vereinigung der Verfolgten
@@ -590,20 +590,20 @@
 												Kreisvereinigung Esslingen</p>
 										</note>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 32 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Beziehung zur verfolgten Person -->
 									<!-- neu Anpassung: Wert für Beziehungsbezeichnung wird im @normal markiert-->
 									<!-- Zulässige Werte für @normal: Elternteil, Kind, Geschwisterteil, Ehepartner/in, Enkelkind, Sonstige Verwandte -->
 									<item>
 										<name role="Beziehung zur verfolgten Person" normal="Kind"></name>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 35. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Verfolgungsgrund. Zulässige Werte für @normal: "politische Überzeugung", "Rasse", "Glaube", "Weltanschauung", "sonstiger Grund", "unbekannter Grund" -->
 								</list>
 							</controlaccess>
 							<controlaccess>
 								<!-- Für jede Person ist ein eigenes controllaccess-Element anzulegen -->
 								<!-- Im Fall von wiederholbaren Erschließungsfeldern ist das gesamte item-Element zu wiederholen. Eine Wiederholung des Namens-Elements ist nicht ausreichend. -->
 								<list>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 22 und 34. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld WGM-ID. Die WGM-ID ist ein zusätzliches Metadatum, das im Zuge des Vorhabens vonseiten des Portals generiert und bereitgestellt wird. -->
 									<!-- GND-Nummern für die beschriebenen Personen und Organisationen werden hier festgehalten und nicht bei den entsprechenden persname und corpname-Angaben. -->
 									<item>
 										<name role="WGM-ID" authfilenumber="094271-0" source="GND"
@@ -613,17 +613,19 @@
 									<item>
 										<name role="Rolle" normal="antragstellend"/>
 									</item>
-									<!-- Metadatenkatalog Entschädigungsakten: Feld 31 -->
+									<!-- Metadatenkatalog Entschädigungsakten: Feld Name der Körperschaft-->
 									<!-- NEU! Geänderte Ansetzung der Attribute. @authfilenumber wird wie bei Personen nur noch bei name[@role="WGM-ID"] vermerkt -->
 									<item>
 										<corpname role="juristische Person">Vereinigung der
 											Verfolgten des Naziregimes - Bund der Antifaschisten.
 											Kreisvereinigung Esslingen</corpname>
 									</item>
-									<!-- NEU! neues Feld für weitere Namen der Oganisation -->
+									<!-- NEU! Metadatenkatalog Entschädigungsakten: Feld Weitere Namen --> 
+									<!-- NEU! neues Feld für weitere Namen der Oganisation --> 
 									<item>
 										<corpname role="weitere Namen">VVN Esslingen, VVN Bund der Antifaschisten Esslingen </corpname>
 									</item>
+									<!-- NEU! Metadatenkatalog Entschädigungsakten: Feld Sitz der Körperschaft --> 
 									<!-- NEU! neues Feld für Sitz der Organisation -->
 									<item>
 										<geogname role="Sitz" authfilenumber="2928751"
