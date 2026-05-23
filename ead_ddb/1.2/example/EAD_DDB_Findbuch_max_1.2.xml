@@ -127,7 +127,7 @@
 					</indexentry>
 					<!-- neu in EAD(DDB) 1.2: Rolle (@role) für Indextyp Sache eingeführt, um benutzerdefinierte Indextypen abbilden zu können -->
 					<indexentry>
-						<subject role="Spezifizierung des Begriffstyps (zur Abbildung benutzerdefinierter Indextypen)" source="Normvokabularname" authfilenumber="Normvokabular_Nummer"
+						<subject source="Normvokabularname" authfilenumber="Normvokabular_Nummer"
 							>Indexbegriff Sache</subject>
 					</indexentry>
 					<indexentry>
@@ -217,7 +217,7 @@
 						</indexentry>
 						<!-- neu in EAD(DDB) 1.2: Rolle (@role) für Indextyp Sache eingeführt, um benutzerdefinierte Indextypen abbilden zu können -->
 						<indexentry>
-							<subject role="Spezifizierung des Begriffstyps (zur Abbildung benutzerdefinierter Indextypen)" source="Normvokabularname"
+							<subject source="Normvokabularname"
 								authfilenumber="Normvokabular_Nummer">Indexbegriff
 								Sache</subject>
 						</indexentry>
@@ -336,7 +336,7 @@
 								</indexentry>
 								<!-- neu in EAD(DDB) 1.2: Rolle (@role) für Indextyp Sache eingeführt, um benutzerdefinierte Indextypen abbilden zu können -->
 								<indexentry>
-									<subject role="Spezifizierung des Begriffstyps (zur Abbildung benutzerdefinierter Indextypen)" source="Normvokabularname"
+									<subject source="Normvokabularname"
 										authfilenumber="Normvokabular_Nummer">Indexbegriff
 										Sache</subject>
 								</indexentry>
